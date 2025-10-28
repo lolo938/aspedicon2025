@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>Smart Pediatrics: AI in Child Healthcare</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<title>Smart Pediatrics: AI in Child Healthcare</title>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -1943,43 +1944,39 @@
             z-index: 1;
         }
     </style>
-</head>
+<style>.source-link{font-size:0.9em;margin-left:6px;color:#1a73e8;text-decoration:none;} .source-link::after{content:' ↗';font-size:0.8em;}</style><style>.descriptive-source{font-size:0.9em;margin-left:6px;color:#0645ad;text-decoration:none;} .descriptive-source::after{content:' ↗';font-size:0.8em;}</style><style>.targeted-source{font-size:0.95em;margin-left:6px;color:#0645ad;text-decoration:none;} .targeted-source::after{content:' ↗';font-size:0.8em;}</style><style>.example-link{font-size:0.95em;margin-left:6px;color:#0645ad;text-decoration:none;} .example-link::after{content:' ↗';font-size:0.8em;}</style></head>
 <body>
-            <div class="presentation-container">
-        <!-- Scroll Controls -->
-        <div class="scroll-controls" id="scrollControls">
-            <button class="scroll-btn" id="scrollUpBtn" title="Scroll Up (Page Up)">▲</button>
-            <button class="scroll-btn auto-scroll-btn" id="autoScrollBtn" title="Auto-scroll (Space)">⏯</button>
-            <button class="scroll-btn" id="scrollDownBtn" title="Scroll Down (Page Down)">▼</button>
-        </div>
-        
-        <!-- Scroll Hint -->
-        <div class="scroll-hint" id="scrollHint">
+<div class="presentation-container">
+<!-- Scroll Controls -->
+<div class="scroll-controls" id="scrollControls">
+<button class="scroll-btn" id="scrollUpBtn" title="Scroll Up (Page Up)">▲</button>
+<button class="scroll-btn auto-scroll-btn" id="autoScrollBtn" title="Auto-scroll (Space)">⏯</button>
+<button class="scroll-btn" id="scrollDownBtn" title="Scroll Down (Page Down)">▼</button>
+</div>
+<!-- Scroll Hint -->
+<div class="scroll-hint" id="scrollHint">
             📜 Use these to scroll long slides!
         </div>
-        
-        <!-- Scroll Progress Indicator -->
-        <div class="scroll-progress" id="scrollProgress">
-            <svg width="60" height="60">
-                <circle class="scroll-progress-circle" cx="30" cy="30" r="25"></circle>
-                <circle class="scroll-progress-bar" cx="30" cy="30" r="25" id="progressBar"></circle>
-            </svg>
-        </div>
-        
-        <!-- Keyboard Shortcuts Help -->
-        <div class="keyboard-shortcuts" id="keyboardHelp">
-            <h4>⌨️ Keyboard Shortcuts</h4>
-            <ul>
-                <li><kbd>←</kbd> <kbd>→</kbd> Navigate slides</li>
-                <li><kbd>PgUp</kbd> <kbd>PgDn</kbd> Scroll within slide</li>
-                <li><kbd>Space</kbd> Auto-scroll on/off</li>
-                <li><kbd>Esc</kbd> Stop auto-scroll</li>
-            </ul>
-        </div>
-        
-        <!-- Slide 1: Title - ONLY SLIDE WITH title-slide CLASS -->
-        <div class="slide active title-slide" style="overflow: hidden; position: relative; background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%) !important;">
-            <style>
+<!-- Scroll Progress Indicator -->
+<div class="scroll-progress" id="scrollProgress">
+<svg height="60" width="60">
+<circle class="scroll-progress-circle" cx="30" cy="30" r="25"></circle>
+<circle class="scroll-progress-bar" cx="30" cy="30" id="progressBar" r="25"></circle>
+</svg>
+</div>
+<!-- Keyboard Shortcuts Help -->
+<div class="keyboard-shortcuts" id="keyboardHelp">
+<h4>⌨️ Keyboard Shortcuts</h4>
+<ul>
+<li><kbd>←</kbd> <kbd>→</kbd> Navigate slides</li>
+<li><kbd>PgUp</kbd> <kbd>PgDn</kbd> Scroll within slide</li>
+<li><kbd>Space</kbd> Auto-scroll on/off</li>
+<li><kbd>Esc</kbd> Stop auto-scroll</li>
+</ul>
+</div>
+<!-- Slide 1: Title - ONLY SLIDE WITH title-slide CLASS -->
+<div class="slide active title-slide" style="overflow: hidden; position: relative; background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%) !important;">
+<style>
                 @keyframes comet-3d {
                     0% { 
                         transform: translate3d(-200px, -200px, 100px) rotate(-45deg);
@@ -2242,1057 +2239,921 @@
                     z-index: -1;
                 }
             </style>
-            
-            <!-- 3D Comets -->
-            <div class="comet-3d"></div>
-            <div class="comet-3d"></div>
-            <div class="comet-3d"></div>
-            <div class="comet-3d"></div>
-            <div class="comet-3d"></div>
-            
-            <!-- Hologram Scan Effect -->
-            <div class="hologram-scan"></div>
-            <div class="hologram-scan" style="animation-delay: 2.5s;"></div>
-            
-            <!-- Neural Network Background -->
-            <svg class="neural-network" xmlns="http://www.w3.org/2000/svg">
-                <line class="neural-line" x1="10%" y1="20%" x2="30%" y2="40%" style="animation-delay: 0s;"/>
-                <line class="neural-line" x1="30%" y1="40%" x2="50%" y2="30%" style="animation-delay: 0.5s;"/>
-                <line class="neural-line" x1="50%" y1="30%" x2="70%" y2="50%" style="animation-delay: 1s;"/>
-                <line class="neural-line" x1="70%" y1="50%" x2="90%" y2="40%" style="animation-delay: 1.5s;"/>
-                <line class="neural-line" x1="20%" y1="60%" x2="40%" y2="80%" style="animation-delay: 0.3s;"/>
-                <line class="neural-line" x1="40%" y1="80%" x2="60%" y2="70%" style="animation-delay: 0.8s;"/>
-                <line class="neural-line" x1="60%" y1="70%" x2="80%" y2="85%" style="animation-delay: 1.3s;"/>
-                <line class="neural-line" x1="15%" y1="35%" x2="85%" y2="65%" style="animation-delay: 0.6s;"/>
-                <line class="neural-line" x1="85%" y1="35%" x2="15%" y2="65%" style="animation-delay: 1.2s;"/>
-            </svg>
-            
-            <!-- Neural Nodes -->
-            <div class="neural-node" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-            <div class="neural-node" style="top: 40%; left: 30%; animation-delay: 0.5s;"></div>
-            <div class="neural-node" style="top: 30%; left: 50%; animation-delay: 1s;"></div>
-            <div class="neural-node" style="top: 50%; left: 70%; animation-delay: 1.5s;"></div>
-            <div class="neural-node" style="top: 40%; left: 90%; animation-delay: 2s;"></div>
-            <div class="neural-node" style="top: 60%; left: 20%; animation-delay: 0.3s;"></div>
-            <div class="neural-node" style="top: 80%; left: 40%; animation-delay: 0.8s;"></div>
-            <div class="neural-node" style="top: 70%; left: 60%; animation-delay: 1.3s;"></div>
-            <div class="neural-node" style="top: 85%; left: 80%; animation-delay: 1.8s;"></div>
-            
-            <!-- AI Particles -->
-            <div class="ai-particles">
-                <div class="particle" style="top: 15%; left: 25%; animation-delay: 0s;"></div>
-                <div class="particle" style="top: 35%; left: 55%; animation-delay: 0.7s;"></div>
-                <div class="particle" style="top: 55%; left: 15%; animation-delay: 1.4s;"></div>
-                <div class="particle" style="top: 75%; left: 75%; animation-delay: 2.1s;"></div>
-                <div class="particle" style="top: 25%; left: 85%; animation-delay: 0.4s;"></div>
-                <div class="particle" style="top: 65%; left: 45%; animation-delay: 1.1s;"></div>
-                <div class="particle" style="top: 45%; left: 10%; animation-delay: 1.8s;"></div>
-                <div class="particle" style="top: 85%; left: 65%; animation-delay: 0.6s;"></div>
-                <div class="particle" style="top: 10%; left: 70%; animation-delay: 0.9s;"></div>
-                <div class="particle" style="top: 90%; left: 30%; animation-delay: 1.5s;"></div>
-            </div>
-            
-            <!-- Main Content -->
-            <div class="title-content">
-                <div class="main-icon-3d">
-                    <svg width="160" height="160" viewBox="0 0 100 100" style="filter: drop-shadow(0 15px 40px rgba(0,0,0,0.6));">
-                        <!-- Central AI Core -->
-                        <circle cx="50" cy="50" r="25" fill="url(#aiGradient)" opacity="0.9"/>
-                        <circle cx="50" cy="50" r="20" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2.5" stroke-dasharray="4,4">
-                            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
-                        </circle>
-                        
-                        <!-- Brain/Medical Symbols -->
-                        <path d="M 45 40 Q 50 35 55 40 Q 60 35 60 45 Q 60 50 50 55 Q 40 50 40 45 Q 40 35 45 40" 
-                              fill="rgba(255,255,255,0.95)" stroke="rgba(102,126,234,1)" stroke-width="2"/>
-                        
-                        <!-- Orbiting Nodes -->
-                        <circle cx="50" cy="20" r="7" fill="rgba(251,191,36,1)">
-                            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="4s" repeatCount="indefinite"/>
-                        </circle>
-                        <circle cx="80" cy="50" r="7" fill="rgba(251,191,36,1)">
-                            <animateTransform attributeName="transform" type="rotate" from="120 50 50" to="480 50 50" dur="4s" repeatCount="indefinite"/>
-                        </circle>
-                        <circle cx="50" cy="80" r="7" fill="rgba(251,191,36,1)">
-                            <animateTransform attributeName="transform" type="rotate" from="240 50 50" to="600 50 50" dur="4s" repeatCount="indefinite"/>
-                        </circle>
-                        <circle cx="20" cy="50" r="7" fill="rgba(251,191,36,1)">
-                            <animateTransform attributeName="transform" type="rotate" from="90 50 50" to="450 50 50" dur="4s" repeatCount="indefinite"/>
-                        </circle>
-                        
-                        <defs>
-                            <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:rgba(102,126,234,1);stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:rgba(118,75,162,1);stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                
-                <h1 class="mega-title">Smart Pediatrics</h1>
-                <div class="subtitle" style="font-size: 2em; color: #2d3561; text-shadow: 0 0 15px rgba(102, 126, 234, 0.3), 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; font-weight: 600;">How AI is Changing Child Healthcare</div>
-                <p style="font-size: 1.5em; margin-top: 20px; color: #4a5568; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-weight: 500;">A Comprehensive Guide for Modern Pediatricians</p>
-                <p style="font-size: 1.3em; color: #667eea; margin-top: 15px; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-weight: 500;">From Theory to Practice in 15 Minutes</p>
-                
-                <div class="presenter-info" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); backdrop-filter: blur(10px); border: 2px solid rgba(102, 126, 234, 0.3); box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15); margin-top: 30px;">
-                    <div class="presenter-name" style="color: #2d3561; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 1.2em;">Presented by</div>
-                    <div class="presenter-name" style="font-size: 1.6em; color: #667eea; text-shadow: 0 3px 10px rgba(102, 126, 234, 0.3); margin-top: 8px; letter-spacing: 0.02em;">Dr. Luhit Dhungel</div>
-                    <div class="presenter-credentials" style="color: #4a5568; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 1.15em; margin-top: 5px;">MBBS, MD PEDIATRICS</div>
-                    
-                    <div class="thank-you-note" style="border-top: 2px solid rgba(102, 126, 234, 0.3); margin-top: 20px; padding-top: 20px;">
-                        <p style="font-size: 1.2em; margin-bottom: 10px; color: #2d3561; text-shadow: 0 2px 8px rgba(0,0,0,0.1);">🙏 Thank you for your time and attention</p>
-                        <p style="font-size: 1.05em; color: #4a5568; text-shadow: 0 2px 8px rgba(0,0,0,0.1);">Together, let's build a smarter, healthier future for all children</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 2: The Healthcare Challenge - Global + India -->
-        <div class="slide">
-            <h2>The Global & Indian Healthcare Challenge</h2>
-            
-            <div class="content-box animated">
-                <h3>🌍 Global Pediatric Burden</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">6,500+</div>
-                        <div class="stat-label">Pediatric sepsis deaths annually in the US <span class="country-badge usa-badge">USA</span></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$4.8B</div>
-                        <div class="stat-label">Annual burden of pediatric sepsis care in the US <span class="country-badge usa-badge">USA</span></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">20.3M</div>
-                        <div class="stat-label">New sepsis cases in children under 5 globally (2017)</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-box animated">
-                <h3>🇮🇳 The Indian Context</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">750,000</div>
-                        <div class="stat-label">Neonatal deaths annually in India - Highest in the world <span class="country-badge india-badge">INDIA</span></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">26M</div>
-                        <div class="stat-label">Children born every year in India <span class="country-badge india-badge">INDIA</span></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">30-111</div>
-                        <div class="stat-label">Neonatal sepsis per 1000 births <span class="country-badge india-badge">INDIA</span></div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">23.4%</div>
-                        <div class="stat-label">Neonatal sepsis mortality rate <span class="country-badge india-badge">INDIA</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>Why We Need AI:</strong> Pediatricians face increasing workload, complex diagnostics, and time pressure. Children present unique challenges - they're not just "small adults".</p>
-                <p style="margin-top: 15px;"><strong>The Opportunity:</strong> AI can analyze vast data instantly, recognize subtle patterns humans might miss, and provide 24/7 decision support - allowing doctors to focus on compassionate patient care.</p>
-            </div>
-        </div>
-
-        <!-- Slide 3: Understanding AI - The Basics -->
-        <div class="slide">
-            <h2>Understanding AI: Breaking Down the Basics</h2>
-            
-            <div class="diagram-container">
-                <div class="diagram-box animated">
-                    <span class="diagram-icon">🧠</span>
-                    <h3>Artificial Intelligence</h3>
-                    <p>Machines that can perform tasks requiring human intelligence</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box animated">
-                    <span class="diagram-icon">📊</span>
-                    <h3>Machine Learning</h3>
-                    <p>Systems that learn from data without explicit programming</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box animated">
-                    <span class="diagram-icon">🔬</span>
-                    <h3>Deep Learning</h3>
-                    <p>Neural networks that mimic human brain processing</p>
-                </div>
-            </div>
-
-            <div class="content-box animated">
-                <h3>Think of It This Way:</h3>
-                <p><strong>Traditional Programming:</strong> You tell the computer exactly what to do, step by step. Like following a recipe.</p>
-                <p><strong>Machine Learning:</strong> You show the computer thousands of examples, and it figures out the patterns itself. Like learning to recognize faces by seeing many photos.</p>
-                <p><strong>Deep Learning:</strong> Multiple layers of processing that can understand complex relationships. Like how your brain processes visual information through multiple layers from retina to visual cortex.</p>
-            </div>
-
-            <div class="key-point animated">
+<!-- 3D Comets -->
+<div class="comet-3d"></div>
+<div class="comet-3d"></div>
+<div class="comet-3d"></div>
+<div class="comet-3d"></div>
+<div class="comet-3d"></div>
+<!-- Hologram Scan Effect -->
+<div class="hologram-scan"></div>
+<div class="hologram-scan" style="animation-delay: 2.5s;"></div>
+<!-- Neural Network Background -->
+<svg class="neural-network" xmlns="http://www.w3.org/2000/svg">
+<line class="neural-line" style="animation-delay: 0s;" x1="10%" x2="30%" y1="20%" y2="40%"></line>
+<line class="neural-line" style="animation-delay: 0.5s;" x1="30%" x2="50%" y1="40%" y2="30%"></line>
+<line class="neural-line" style="animation-delay: 1s;" x1="50%" x2="70%" y1="30%" y2="50%"></line>
+<line class="neural-line" style="animation-delay: 1.5s;" x1="70%" x2="90%" y1="50%" y2="40%"></line>
+<line class="neural-line" style="animation-delay: 0.3s;" x1="20%" x2="40%" y1="60%" y2="80%"></line>
+<line class="neural-line" style="animation-delay: 0.8s;" x1="40%" x2="60%" y1="80%" y2="70%"></line>
+<line class="neural-line" style="animation-delay: 1.3s;" x1="60%" x2="80%" y1="70%" y2="85%"></line>
+<line class="neural-line" style="animation-delay: 0.6s;" x1="15%" x2="85%" y1="35%" y2="65%"></line>
+<line class="neural-line" style="animation-delay: 1.2s;" x1="85%" x2="15%" y1="35%" y2="65%"></line>
+</svg>
+<!-- Neural Nodes -->
+<div class="neural-node" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+<div class="neural-node" style="top: 40%; left: 30%; animation-delay: 0.5s;"></div>
+<div class="neural-node" style="top: 30%; left: 50%; animation-delay: 1s;"></div>
+<div class="neural-node" style="top: 50%; left: 70%; animation-delay: 1.5s;"></div>
+<div class="neural-node" style="top: 40%; left: 90%; animation-delay: 2s;"></div>
+<div class="neural-node" style="top: 60%; left: 20%; animation-delay: 0.3s;"></div>
+<div class="neural-node" style="top: 80%; left: 40%; animation-delay: 0.8s;"></div>
+<div class="neural-node" style="top: 70%; left: 60%; animation-delay: 1.3s;"></div>
+<div class="neural-node" style="top: 85%; left: 80%; animation-delay: 1.8s;"></div>
+<!-- AI Particles -->
+<div class="ai-particles">
+<div class="particle" style="top: 15%; left: 25%; animation-delay: 0s;"></div>
+<div class="particle" style="top: 35%; left: 55%; animation-delay: 0.7s;"></div>
+<div class="particle" style="top: 55%; left: 15%; animation-delay: 1.4s;"></div>
+<div class="particle" style="top: 75%; left: 75%; animation-delay: 2.1s;"></div>
+<div class="particle" style="top: 25%; left: 85%; animation-delay: 0.4s;"></div>
+<div class="particle" style="top: 65%; left: 45%; animation-delay: 1.1s;"></div>
+<div class="particle" style="top: 45%; left: 10%; animation-delay: 1.8s;"></div>
+<div class="particle" style="top: 85%; left: 65%; animation-delay: 0.6s;"></div>
+<div class="particle" style="top: 10%; left: 70%; animation-delay: 0.9s;"></div>
+<div class="particle" style="top: 90%; left: 30%; animation-delay: 1.5s;"></div>
+</div>
+<!-- Main Content -->
+<div class="title-content">
+<div class="main-icon-3d">
+<svg height="160" style="filter: drop-shadow(0 15px 40px rgba(0,0,0,0.6));" viewbox="0 0 100 100" width="160">
+<!-- Central AI Core -->
+<circle cx="50" cy="50" fill="url(#aiGradient)" opacity="0.9" r="25"></circle>
+<circle cx="50" cy="50" fill="none" r="20" stroke="rgba(255,255,255,0.8)" stroke-dasharray="4,4" stroke-width="2.5">
+<animatetransform attributename="transform" dur="8s" from="0 50 50" repeatcount="indefinite" to="360 50 50" type="rotate"></animatetransform>
+</circle>
+<!-- Brain/Medical Symbols -->
+<path d="M 45 40 Q 50 35 55 40 Q 60 35 60 45 Q 60 50 50 55 Q 40 50 40 45 Q 40 35 45 40" fill="rgba(255,255,255,0.95)" stroke="rgba(102,126,234,1)" stroke-width="2"></path>
+<!-- Orbiting Nodes -->
+<circle cx="50" cy="20" fill="rgba(251,191,36,1)" r="7">
+<animatetransform attributename="transform" dur="4s" from="0 50 50" repeatcount="indefinite" to="360 50 50" type="rotate"></animatetransform>
+</circle>
+<circle cx="80" cy="50" fill="rgba(251,191,36,1)" r="7">
+<animatetransform attributename="transform" dur="4s" from="120 50 50" repeatcount="indefinite" to="480 50 50" type="rotate"></animatetransform>
+</circle>
+<circle cx="50" cy="80" fill="rgba(251,191,36,1)" r="7">
+<animatetransform attributename="transform" dur="4s" from="240 50 50" repeatcount="indefinite" to="600 50 50" type="rotate"></animatetransform>
+</circle>
+<circle cx="20" cy="50" fill="rgba(251,191,36,1)" r="7">
+<animatetransform attributename="transform" dur="4s" from="90 50 50" repeatcount="indefinite" to="450 50 50" type="rotate"></animatetransform>
+</circle>
+<defs>
+<lineargradient id="aiGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:rgba(102,126,234,1);stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:rgba(118,75,162,1);stop-opacity:1"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<h1 class="mega-title">Smart Pediatrics</h1>
+<div class="subtitle" style="font-size: 2em; color: #2d3561; text-shadow: 0 0 15px rgba(102, 126, 234, 0.3), 0 3px 10px rgba(0,0,0,0.1); margin-bottom: 20px; font-weight: 600;">How AI is Changing Child Healthcare</div>
+<p style="font-size: 1.5em; margin-top: 20px; color: #4a5568; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-weight: 500;">A Comprehensive Guide for Modern Pediatricians</p>
+<p style="font-size: 1.3em; color: #667eea; margin-top: 15px; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-weight: 500;">From Theory to Practice in 15 Minutes</p>
+<div class="presenter-info" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); backdrop-filter: blur(10px); border: 2px solid rgba(102, 126, 234, 0.3); box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15); margin-top: 30px;">
+<div class="presenter-name" style="color: #2d3561; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 1.2em;">Presented by</div>
+<div class="presenter-name" style="font-size: 1.6em; color: #667eea; text-shadow: 0 3px 10px rgba(102, 126, 234, 0.3); margin-top: 8px; letter-spacing: 0.02em;">Dr. Luhit Dhungel</div>
+<div class="presenter-credentials" style="color: #4a5568; text-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 1.15em; margin-top: 5px;">MBBS, MD PEDIATRICS</div>
+<div class="thank-you-note" style="border-top: 2px solid rgba(102, 126, 234, 0.3); margin-top: 20px; padding-top: 20px;">
+<p style="font-size: 1.2em; margin-bottom: 10px; color: #2d3561; text-shadow: 0 2px 8px rgba(0,0,0,0.1);">🙏 Thank you for your time and attention</p>
+<p style="font-size: 1.05em; color: #4a5568; text-shadow: 0 2px 8px rgba(0,0,0,0.1);">Together, let's build a smarter, healthier future for all children</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 2: The Healthcare Challenge - Global + India -->
+<!-- Slide 3: Understanding AI - The Basics -->
+<div class="slide">
+<h2>Understanding AI: Breaking Down the Basics</h2>
+<div class="diagram-container">
+<div class="diagram-box animated">
+<span class="diagram-icon">🧠</span>
+<h3>Artificial Intelligence</h3>
+<p>Machines that can perform tasks requiring human intelligence</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box animated">
+<span class="diagram-icon">📊</span>
+<h3>Machine Learning</h3>
+<p>Systems that learn from data without explicit programming</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box animated">
+<span class="diagram-icon">🔬</span>
+<h3>Deep Learning</h3>
+<p>Neural networks that mimic human brain processing</p>
+</div>
+</div>
+<div class="content-box animated">
+<h3>Think of It This Way:</h3>
+<p><strong>Traditional Programming:</strong> You tell the computer exactly what to do, step by step. Like following a recipe.</p>
+<p><strong>Machine Learning:</strong> You show the computer thousands of examples, and it figures out the patterns itself. Like learning to recognize faces by seeing many photos.</p>
+<p><strong>Deep Learning:</strong> Multiple layers of processing that can understand complex relationships. Like how your brain processes visual information through multiple layers from retina to visual cortex.</p>
+</div>
+<div class="key-point animated">
                 💡 <strong>For Pediatricians:</strong> You don't need to be a programmer. Understanding AI is like understanding how an MRI works - you need to know what it can tell you, its limitations, and when to use it. Not how to build one!
             </div>
-        </div>
-
-        <!-- Slide 4: How Machine Learning Actually Works -->
-        <div class="slide">
-            <h2>How Machine Learning Actually Works</h2>
-            
-            <div class="process-flow">
-                <div class="process-step animated">
-                    <div class="step-number">1</div>
-                    <div class="step-title">Data Collection</div>
-                    <div class="step-desc">Gather medical records, lab results, imaging data</div>
-                </div>
-                <span class="arrow">→</span>
-                <div class="process-step animated">
-                    <div class="step-number">2</div>
-                    <div class="step-title">Training</div>
-                    <div class="step-desc">Algorithm learns patterns from thousands of examples</div>
-                </div>
-                <span class="arrow">→</span>
-                <div class="process-step animated">
-                    <div class="step-number">3</div>
-                    <div class="step-title">Validation</div>
-                    <div class="step-desc">Test on new data to ensure accuracy</div>
-                </div>
-                <span class="arrow">→</span>
-                <div class="process-step animated">
-                    <div class="step-number">4</div>
-                    <div class="step-title">Deployment</div>
-                    <div class="step-desc">Use in clinical practice with ongoing monitoring</div>
-                </div>
-            </div>
-
-            <div class="case-study animated">
-                <h3>📖 Real Example: Sepsis Prediction</h3>
-                <p><strong>Training Phase:</strong> The ML system analyzed data from 10,000+ hospitalized children. It learned which combinations of vital signs, lab values, and clinical notes preceded sepsis.</p>
-                <p><strong>Pattern Recognition:</strong> It discovered that subtle changes in heart rate variability, combined with specific lab trends and nursing notes, predicted sepsis 4 hours before clinical symptoms appeared.</p>
-                <p><strong>Clinical Application:</strong> Now when a new patient's data is entered, the system can flag high-risk children, allowing proactive treatment before they crash.</p>
-                <p><strong>Result <span class="country-badge usa-badge">USA</span>:</strong> 1.9% reduction in sepsis mortality and 5% improvement in protocol adherence in the COMPOSER study.</p>
-                <p><strong>Result <span class="country-badge india-badge">INDIA</span>:</strong> Rural Gadchiroli, Maharashtra: Sepsis incidence declined from 111 per 1000 (1998-2001) to 19 per 1000 (2016-2019) - an 82.9% decrease using systematic data collection + analysis!</p>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>Key Difference from Traditional Medicine:</strong> Instead of following IF-THEN rules we program, ML discovers its own rules from patterns in the data - often finding relationships we didn't know existed!</p>
-            </div>
-        </div>
-
-        <!-- Slide 5: Types of AI Technologies -->
-        <div class="slide">
-            <h2>AI Technologies You'll Encounter</h2>
-            
-            <div class="icon-grid">
-                <div class="icon-item animated">
-                    <span class="emoji">👁️</span>
-                    <strong>Computer Vision</strong>
-                    <p>Reads X-rays, MRIs, scans</p>
-                </div>
-                <div class="icon-item animated">
-                    <span class="emoji">💬</span>
-                    <strong>NLP</strong>
-                    <p>Understands clinical notes</p>
-                </div>
-                <div class="icon-item animated">
-                    <span class="emoji">📈</span>
-                    <strong>Predictive Analytics</strong>
-                    <p>Forecasts patient outcomes</p>
-                </div>
-                <div class="icon-item animated">
-                    <span class="emoji">🎯</span>
-                    <strong>Decision Support</strong>
-                    <p>Suggests diagnoses & treatments</p>
-                </div>
-                <div class="icon-item animated">
-                    <span class="emoji">🤖</span>
-                    <strong>Virtual Assistants</strong>
-                    <p>Answers patient questions</p>
-                </div>
-                <div class="icon-item animated">
-                    <span class="emoji">🧬</span>
-                    <strong>Genomic Analysis</strong>
-                    <p>Interprets genetic data</p>
-                </div>
-            </div>
-
-            <table class="comparison-table animated">
-                <tr>
-                    <th>Technology</th>
-                    <th>What It Does</th>
-                    <th>Pediatric Application</th>
-                </tr>
-                <tr>
-                    <td><strong>CNNs (Convolutional Neural Networks)</strong></td>
-                    <td>Analyzes images layer by layer</td>
-                    <td>Detecting tumors in brain MRIs, identifying fractures in X-rays</td>
-                </tr>
-                <tr>
-                    <td><strong>Random Forest</strong></td>
-                    <td>Multiple decision trees voting together</td>
-                    <td>Emergency triage, sepsis risk scoring</td>
-                </tr>
-                <tr>
-                    <td><strong>Gradient Boosting</strong></td>
-                    <td>Sequential models correcting errors</td>
-                    <td>Mortality prediction, ICU outcome forecasting</td>
-                </tr>
-                <tr>
-                    <td><strong>Transformers/LLMs</strong></td>
-                    <td>Understands context and language</td>
-                    <td>Clinical note generation, patient education materials</td>
-                </tr>
-            </table>
-
-            <div class="key-point animated">
+</div>
+<!-- Slide 4: How Machine Learning Actually Works -->
+<!-- Slide 5: Types of AI Technologies -->
+<div class="slide">
+<h2>AI Technologies You'll Encounter</h2>
+<div class="icon-grid">
+<div class="icon-item animated">
+<span class="emoji">👁️</span>
+<strong>Computer Vision</strong>
+<p>Reads X-rays, MRIs, scans</p>
+</div>
+<div class="icon-item animated">
+<span class="emoji">💬</span>
+<strong>NLP</strong>
+<p>Understands clinical notes</p>
+</div>
+<div class="icon-item animated">
+<span class="emoji">📈</span>
+<strong>Predictive Analytics</strong>
+<p>Forecasts patient outcomes</p>
+</div>
+<div class="icon-item animated">
+<span class="emoji">🎯</span>
+<strong>Decision Support</strong>
+<p>Suggests diagnoses &amp; treatments</p>
+</div>
+<div class="icon-item animated">
+<span class="emoji">🤖</span>
+<strong>Virtual Assistants</strong>
+<p>Answers patient questions</p>
+</div>
+<div class="icon-item animated">
+<span class="emoji">🧬</span>
+<strong>Genomic Analysis</strong>
+<p>Interprets genetic data</p>
+</div>
+</div>
+<table class="comparison-table animated">
+<tr>
+<th>Technology</th>
+<th>What It Does</th>
+<th>Pediatric Application</th>
+</tr>
+<tr>
+<td>CNNs (Convolutional Neural Networks)</td>
+<td>Analyzes images layer by layer</td>
+<td>Detecting tumors in brain MRIs, identifying fractures in X-rays</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>Multiple decision trees voting together</td>
+<td>Emergency triage, sepsis risk scoring</td>
+</tr>
+<tr>
+<td>Gradient Boosting</td>
+<td>Sequential models correcting errors</td>
+<td>Mortality prediction, ICU outcome forecasting</td>
+</tr>
+<tr>
+<td>Transformers/LLMs</td>
+<td>Understands context and language</td>
+<td>Clinical note generation, patient education materials</td>
+</tr>
+</table>
+<div class="key-point animated">
                 📚 <strong>For Your Practice:</strong> You don't need to choose the algorithm - vendors and researchers do that. But understanding what each type is good for helps you evaluate AI tools critically.
             </div>
-        </div>
-
-        <!-- Slide 6: Current State of Pediatric AI -->
-        <div class="slide">
-            <h2>Where We Stand: AI in Pediatrics Today</h2>
-            
-            <div class="stats-grid animated">
-                <div class="stat-card">
-                    <div class="stat-number">950</div>
-                    <div class="stat-label">AI/ML devices authorized by FDA as of 2024 <span class="country-badge usa-badge">USA</span></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">10%</div>
-                    <div class="stat-label">Include any pediatric population (69 devices) <span class="country-badge usa-badge">USA</span></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">0.6%</div>
-                    <div class="stat-label">Developed ONLY for children (just 4 devices) <span class="country-badge usa-badge">USA</span></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">$1.6B</div>
-                    <div class="stat-label">Indian AI healthcare market by 2025 (40.6% CAGR) <span class="country-badge india-badge">INDIA</span></div>
-                </div>
-            </div>
-
-            <div class="content-box animated">
-                <h3>🚦 The Pediatric AI Gap</h3>
-                <p><strong>Why the lag?</strong> Pediatric AI faces unique challenges:</p>
-                <ul>
-                    <li>Stricter privacy regulations for children's data</li>
-                    <li>Smaller market size reduces commercial incentive</li>
-                    <li>Limited data availability due to rarity of many pediatric conditions</li>
-                    <li>Age-related physiological changes require separate models for different age groups</li>
-                    <li>Consent complexities - parents consent initially, then children at age of majority</li>
-                </ul>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>The Silver Lining (2024-2025):</strong> Major institutions are investing heavily. <span class="country-badge usa-badge">USA</span> Mount Sinai launched Center for AI in Children's Health (March 2025), White House committed $50M annually for 10 years to childhood cancer AI. <span class="country-badge india-badge">INDIA</span> e-Sanjeevani expansion, Digital India push, 92% of healthcare leaders believe automation is critical!</p>
-            </div>
-
-            <div class="progress-bar animated">
-                <div class="progress-fill" style="width: 10%;"></div>
-            </div>
-            <p class="animated" style="text-align: center; color: #666;"><em>Current pediatric AI adoption: ~10% of available AI healthcare tools</em></p>
-        </div>
-
-        <!-- Slide 7: Early Disease Detection - Sepsis Deep Dive -->
-        <div class="slide">
-            <h2>Application 1: Early Disease Detection - Sepsis</h2>
-            
-            <div class="case-study animated">
-                <h3>🚨 The Sepsis Challenge</h3>
-                <p><strong>The Problem:</strong> Sepsis progresses rapidly. Every hour of delayed treatment increases mortality by 4-8%. Early signs are subtle and easily missed in busy PICUs and ERs.</p>
-                <p><strong>Traditional Approach:</strong> Scoring systems like PELOD-2, SIRS, and qSOFA rely on threshold-based rules. They miss nuanced patterns and often alert too late.</p>
-            </div>
-
-            <div class="content-box animated">
-                <h3>How AI Changes the Game</h3>
-                <p><strong>What the AI Monitors:</strong></p>
-                <ul>
-                    <li>Vital signs: Heart rate, respiratory rate, blood pressure, temperature (continuous trends, not just snapshots)</li>
-                    <li>Laboratory values: WBC, lactate, CRP, procalcitonin (trajectory and rate of change)</li>
-                    <li>Clinical notes: Keywords and phrases in nursing notes and physician documentation</li>
-                    <li>Medication administration: Types and timing of antibiotics, fluids, pressors</li>
-                    <li>Demographics and history: Age, comorbidities, recent procedures</li>
-                </ul>
-            </div>
-
-            <div class="stats-grid animated">
-                <div class="stat-card">
-                    <div class="stat-number">0.916</div>
-                    <div class="stat-label">AUC for detecting severe sepsis at onset (vs 0.73 for PELOD-2)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">0.718</div>
-                    <div class="stat-label">AUC for predicting sepsis 4 hours before symptoms</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">1.9%</div>
-                    <div class="stat-label">Reduction in sepsis mortality with COMPOSER AI system <span class="country-badge usa-badge">USA</span></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">82.9%</div>
-                    <div class="stat-label">Reduction in sepsis over 21 years, Gadchiroli <span class="country-badge india-badge">INDIA</span></div>
-                </div>
-            </div>
-
-            <div class="case-study animated" style="background: linear-gradient(135deg, #d4f1f4 0%, #a8e6cf 100%); border-left: 5px solid #00b894;">
-                <h3>🏥 Real-World Success: CHOP (Children's Hospital of Philadelphia) <span class="country-badge usa-badge">USA</span></h3>
-                <p><strong>Patient:</strong> 6-year-old boy, post-surgery, stable vitals</p>
-                <p><strong>At 2:00 AM:</strong> AI sepsis prediction score begins rising (0.3 → 0.6)</p>
-                <p><strong>At 2:45 AM:</strong> Nurse notified, reassesses patient - appears stable but slightly warmer</p>
-                <p><strong>At 3:15 AM:</strong> Score hits 0.8 - Rapid Response Team called proactively</p>
-                <p><strong>At 3:30 AM:</strong> Blood cultures drawn, antibiotics started</p>
-                <p><strong>At 4:00 AM:</strong> Patient decompensates - hypotensive, tachycardic</p>
-                <p><strong>Outcome:</strong> Because intervention started 90 minutes BEFORE clinical deterioration, the child recovered in 48 hours instead of needing ICU transfer. The AI caught subtle patterns the human eye couldn't see at 2 AM.</p>
-            </div>
-
-            <div class="key-point animated">
+</div><div class="slide">
+<h2>How Machine Learning Works in Pediatrics</h2>
+<div class="content-box animated">
+<p>Machine Learning (ML) enables systems to learn from data rather than being explicitly programmed. In pediatric healthcare, it helps in diagnosis prediction, risk stratification, and personalized care planning.</p>
+</div>
+<div class="diagram-container">
+<div class="diagram-box">
+<span class="diagram-icon">📊</span>
+<h3>Data Collection</h3>
+<p>Vital signs, lab data, EHR records, patient history.</p>
+</div>
+<span class="arrow">➡️</span>
+<div class="diagram-box">
+<span class="diagram-icon">🧠</span>
+<h3>Training the Model</h3>
+<p>ML algorithms learn patterns from large pediatric datasets.</p>
+</div>
+<span class="arrow">➡️</span>
+<div class="diagram-box">
+<span class="diagram-icon">💡</span>
+<h3>Prediction</h3>
+<p>Model predicts disease risk or diagnosis — e.g., sepsis.</p>
+</div>
+<span class="arrow">➡️</span>
+<div class="diagram-box">
+<span class="diagram-icon">🏥</span>
+<h3>Clinical Action</h3>
+<p>Supports timely intervention and better outcomes.</p>
+</div>
+</div>
+<div class="process-flow">
+<div class="process-step">
+<div class="step-number">1</div>
+<div class="step-title">Input Data</div>
+<div class="step-desc">Collect vitals, labs, and demographics.</div>
+</div>
+<div class="process-step">
+<div class="step-number">2</div>
+<div class="step-title">Feature Engineering</div>
+<div class="step-desc">Identify key features like temperature trend, WBC count, HR variability.</div>
+</div>
+<div class="process-step">
+<div class="step-number">3</div>
+<div class="step-title">Model Training</div>
+<div class="step-desc">Train models like Random Forest or Neural Networks on pediatric sepsis datasets.</div>
+</div>
+<div class="process-step">
+<div class="step-number">4</div>
+<div class="step-title">Prediction</div>
+<div class="step-desc">Model flags high-risk patients for sepsis early warning.</div>
+</div>
+</div>
+<div class="highlight animated">
+<h3>Example: Sepsis Prediction in NICU</h3>
+<p>ML models can analyze continuous vital sign data (heart rate, temperature, SpO₂) to detect subtle patterns before clinical symptoms appear, alerting clinicians 6–12 hours before onset.</p>
+<p>Source: <a href="https://pubmed.ncbi.nlm.nih.gov/35227631/" target="_blank">PubMed Study on Early Sepsis Detection ↗</a></p>
+</div>
+<div class="content-box">
+<p><strong>Implication:</strong> Reduced mortality and earlier treatment in neonatal and pediatric sepsis care through AI-assisted monitoring systems.</p>
+</div>
+</div>
+<!-- Slide 6: Current State of Pediatric AI -->
+<div class="slide">
+<h2>Where We Stand: AI in Pediatrics Today</h2>
+<div class="stats-grid animated">
+<div class="stat-card">
+<div class="stat-number">950</div>
+<div class="stat-label">AI/ML devices authorized by FDA as of 2024 <span class="country-badge usa-badge">USA</span></div>
+</div>
+<div class="stat-card">
+<div class="stat-number">10%</div>
+<div class="stat-label">Include any pediatric population (69 devices) <span class="country-badge usa-badge">USA</span></div>
+</div>
+<div class="stat-card">
+<div class="stat-number">0.6%</div>
+<div class="stat-label">Developed ONLY for children (just 4 devices) <span class="country-badge usa-badge">USA</span></div>
+</div>
+<div class="stat-card">
+<div class="stat-number">$1.6B</div>
+<div class="stat-label">Indian AI healthcare market by 2025 (40.6% CAGR) <span class="country-badge india-badge">INDIA</span></div>
+</div>
+</div>
+<div class="content-box animated">
+<h3>🚦 The Pediatric AI Gap</h3>
+<p><strong>Why the lag?</strong> Pediatric AI faces unique challenges:</p>
+<ul>
+<li>Stricter privacy regulations for children's data</li>
+<li>Smaller market size reduces commercial incentive</li>
+<li>Limited data availability due to rarity of many pediatric conditions</li>
+<li>Age-related physiological changes require separate models for different age groups</li>
+<li>Consent complexities - parents consent initially, then children at age of majority</li>
+</ul>
+</div>
+<div class="highlight animated">
+<p><strong>The Silver Lining (2024-2025):</strong> Major institutions are investing heavily. <span class="country-badge usa-badge">USA</span> Mount Sinai launched Center for AI in Children's Health (March 2025), White House committed $50M annually for 10 years to childhood cancer AI. <span class="country-badge india-badge">INDIA</span> e-Sanjeevani expansion, Digital India push, 92% of healthcare leaders believe automation is critical!</p>
+</div>
+<div class="progress-bar animated">
+<div class="progress-fill" style="width: 10%;"></div>
+</div>
+<p class="animated" style="text-align: center; color: #666;">Current pediatric AI adoption: ~10% of available AI healthcare tools</p>
+</div><div class="slide">
+<h2>Application 1: Early Disease Detection - Sepsis</h2>
+<div class="case-study animated">
+<h3>🚨 The <a href="https://www.sepsis.org/wp-content/uploads/2020/06/New-Burden-of-Sepsis-Data-3-9-20.pdf" rel="noopener noreferrer" target="_blank">Sepsis</a> Challenge</h3>
+<p><strong>The Problem:</strong> Sepsis progresses rapidly. Every hour of delayed treatment increases mortality by 4-8%. Early signs are subtle and easily missed in busy PICUs and ERs.</p>
+<p><strong>Traditional Approach:</strong> Scoring systems like PELOD-2, SIRS, and qSOFA rely on threshold-based rules. They miss nuanced patterns and often alert too late.</p>
+</div>
+<div class="content-box animated">
+<h3>How AI Changes the Game</h3>
+<p><strong>What the AI Monitors:</strong></p>
+<ul>
+<li>Vital signs: Heart rate, respiratory rate, blood pressure, temperature (continuous trends, not just snapshots)</li>
+<li>Laboratory values: WBC, lactate, CRP, procalcitonin (trajectory and rate of change)</li>
+<li>Clinical notes: Keywords and phrases in nursing notes and physician documentation</li>
+<li>Medication administration: Types and timing of antibiotics, fluids, pressors</li>
+<li>Demographics and history: Age, comorbidities, recent procedures</li>
+</ul>
+</div>
+<div class="stats-grid animated">
+<div class="stat-card">
+<div class="stat-number">0.916</div>
+<div class="stat-label">AUC for detecting severe <a href="https://www.sepsis.org/wp-content/uploads/2020/06/New-Burden-of-Sepsis-Data-3-9-20.pdf" rel="noopener noreferrer" target="_blank">sepsis</a> at onset (vs 0.73 for PELOD-2)</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">0.718</div>
+<div class="stat-label">AUC for predicting sepsis 4 hours before symptoms</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">1.9%</div>
+<div class="stat-label">Reduction in sepsis mortality with <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10805720/" rel="noopener noreferrer" target="_blank">COMPOSER</a> AI system <span class="country-badge usa-badge">USA</span></div>
+</div>
+<div class="stat-card">
+<div class="stat-number">82.9%</div>
+<div class="stat-label">Reduction in sepsis over 21 years, Gadchiroli <span class="country-badge india-badge">INDIA</span></div>
+</div>
+</div>
+<div class="case-study animated" style="background: linear-gradient(135deg, #d4f1f4 0%, #a8e6cf 100%); border-left: 5px solid #00b894;">
+<h3>🏥 Real-World Success: CHOP (Children's Hospital of Philadelphia) <span class="country-badge usa-badge">USA</span></h3>
+<p><strong>Patient:</strong> 6-year-old boy, post-surgery, stable vitals</p>
+<p><strong>At 2:00 AM:</strong> AI <a href="https://www.sepsis.org/wp-content/uploads/2020/06/New-Burden-of-Sepsis-Data-3-9-20.pdf" rel="noopener noreferrer" target="_blank">sepsis</a> prediction score begins rising (0.3 → 0.6)</p>
+<p><strong>At 2:45 AM:</strong> Nurse notified, reassesses patient - appears stable but slightly warmer</p>
+<p><strong>At 3:15 AM:</strong> Score hits 0.8 - Rapid Response Team called proactively</p>
+<p><strong>At 3:30 AM:</strong> Blood cultures drawn, antibiotics started</p>
+<p><strong>At 4:00 AM:</strong> Patient decompensates - hypotensive, tachycardic</p>
+<p><strong>Outcome:</strong> Because intervention started 90 minutes BEFORE clinical deterioration, the child recovered in 48 hours instead of needing ICU transfer. The AI caught subtle patterns the human eye couldn't see at 2 AM.</p>
+</div>
+<div class="key-point animated">
                 💡 <strong>Clinical Pearl:</strong> The AI doesn't replace clinical judgment - it augments it. When the score rises, it prompts you to reassess. Think of it as having a tireless resident constantly monitoring every patient and flagging concerning trends.
             </div>
-        </div>
-
-        <!-- Slide 8: Medical Imaging Revolution -->
-        <div class="slide">
-            <h2>Application 2: Medical Imaging & Radiology</h2>
-            
-            <div class="diagram-container">
-                <div class="diagram-box animated">
-                    <span class="diagram-icon">📷</span>
-                    <h3>Image Acquisition</h3>
-                    <p>AI optimizes scan parameters, reduces radiation dose</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box animated">
-                    <span class="diagram-icon">🔍</span>
-                    <h3>Analysis</h3>
-                    <p>Detects abnormalities, measures structures</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box animated">
-                    <span class="diagram-icon">📋</span>
-                    <h3>Reporting</h3>
-                    <p>Generates structured findings, prioritizes urgent cases</p>
-                </div>
-            </div>
-
-            <div class="content-box animated">
-                <h3>🧠 Brain Imaging: The Success Story</h3>
-                <p><strong>Pediatric Brain Tumors:</strong> ML-based classification improves diagnostic accuracy of childhood intracranial tumors, especially difficult posterior fossa tumors where different tumor types have overlapping features.</p>
-                <p><strong>How It Works:</strong> CNNs analyze multiple MRI sequences (T1, T2, FLAIR, contrast-enhanced) simultaneously. They detect patterns in:</p>
-                <ul>
-                    <li>Tumor location and border characteristics</li>
-                    <li>Enhancement patterns after contrast</li>
-                    <li>Surrounding edema and mass effect</li>
-                    <li>Relationship to critical structures</li>
-                </ul>
-                <p><strong>Clinical Impact:</strong> Better preoperative planning, reduced need for biopsy in some cases, and more accurate differentiation between medulloblastoma, ependymoma, and pilocytic astrocytoma.</p>
-            </div>
-
-            <div class="case-study animated" style="background: linear-gradient(135deg, #fff5e6 0%, #ffe0b3 100%); border-left: 5px solid #ff9500;">
-                <h3>📖 Real Case: Boston Children's Hospital <span class="country-badge usa-badge">USA</span></h3>
-                <p><strong>Patient:</strong> 8-year-old girl with headaches and vomiting</p>
-                <p><strong>Initial MRI:</strong> Posterior fossa mass - radiologist uncertain between medulloblastoma vs ependymoma</p>
-                <p><strong>AI Analysis:</strong> Deep learning algorithm analyzed 2,500+ similar cases in seconds</p>
-                <p><strong>Prediction:</strong> 89% probability of ependymoma based on: tumor location (4th ventricle wall), enhancement pattern (heterogeneous), and calcification distribution</p>
-                <p><strong>Surgical Planning:</strong> Neurosurgeon used AI insights for approach planning</p>
-                <p><strong>Pathology Confirmation:</strong> Grade II ependymoma - AI was correct!</p>
-                <p><strong>Impact:</strong> Family counseled appropriately pre-surgery, surgical approach optimized, and treatment plan ready immediately post-surgery. Saved 5-7 days of diagnostic uncertainty.</p>
-            </div>
-
-            <div class="content-box animated">
-                <h3>☢️ Radiation Safety Benefit</h3>
-                <p>AI-powered image reconstruction allows high-quality CT scans at 50-70% reduced radiation dose - critical for children who face lifetime cancer risks from radiation exposure.</p>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>Indian Context <span class="country-badge india-badge">INDIA</span>:</strong> India has ~1 radiologist per 100,000 population (vs 12 in USA). AI-powered TB detection (qXR by Qure.ai) is being deployed in 100+ government hospitals. Emergency teleconsultation via e-Sanjeevani + AI imaging = Rural child gets expert diagnosis same day!</p>
-            </div>
-        </div>
-
-        <!-- Slide 9: Cancer Diagnosis -->
-        <div class="slide">
-            <h2>Application 3: Pediatric Cancer Diagnosis</h2>
-            
-            <div class="timeline animated">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🩸 Leukemia Detection</h3>
-                        <p><strong>Traditional:</strong> Manual microscopy of blood smears - time-consuming, subjective, requires expert pathologists</p>
-                        <p><strong>AI-Enhanced:</strong> Automated analysis of blood cell morphology and flow cytometry data. Classifies ALL, AML, and CML subtypes with >95% accuracy in minutes.</p>
-                        <p><strong>Impact:</strong> Faster diagnosis, consistent results, accessible to centers without specialized pediatric hematopathologists</p>
-                        
-                        <div style="background: #e8f5e9; padding: 15px; margin-top: 15px; border-radius: 8px; border-left: 4px solid #4caf50;">
-                            <p><strong>🏥 Real Case - AIIMS Delhi</strong> <span class="country-badge india-badge">INDIA</span></p>
-                            <p><strong>Patient:</strong> 5-year-old from rural Bihar with fever, bruising</p>
-                            <p><strong>Challenge:</strong> Local hospital sent blood smear images via WhatsApp</p>
-                            <p><strong>AI Analysis:</strong> Automated system detected blast cells, classified as B-cell ALL</p>
-                            <p><strong>Timeline:</strong> 2 hours from image upload to diagnosis (vs 5-7 days for sample transport + manual review)</p>
-                            <p><strong>Outcome:</strong> Treatment started same day, patient now in remission</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🧠 Brain Tumor Genomics</h3>
-                        <p><strong>Challenge:</strong> Medulloblastoma has 4 molecular subtypes (WNT, SHH, Group 3, Group 4) with different prognoses and treatments</p>
-                        <p><strong>AI Solution:</strong> Algorithms integrate histological images + mRNA expression profiles to predict molecular subtype without full genomic sequencing</p>
-                        <p><strong>Advantage:</strong> Results in days vs weeks, lower cost, guides immediate treatment decisions</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🔬 Digital Pathology</h3>
-                        <p><strong>Innovation:</strong> Whole slide imaging + deep learning = automated detection of neuroblastoma cells, accurate grading of Wilms tumors</p>
-                        <p><strong>Consistency:</strong> Reduces inter-observer variability between pathologists from 20-30% to <5%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="key-point animated">
+</div>
+<!-- Slide 7: Early Disease Detection - Sepsis Deep Dive -->
+<!-- Slide 8: Medical Imaging Revolution -->
+<div class="slide">
+<h2>Application 2: Medical Imaging &amp; Radiology</h2>
+<div class="diagram-container">
+<div class="diagram-box animated">
+<span class="diagram-icon">📷</span>
+<h3>Image Acquisition</h3>
+<p>AI optimizes scan parameters, reduces radiation dose</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box animated">
+<span class="diagram-icon">🔍</span>
+<h3>Analysis</h3>
+<p>Detects abnormalities, measures structures</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box animated">
+<span class="diagram-icon">📋</span>
+<h3>Reporting</h3>
+<p>Generates structured findings, prioritizes urgent cases</p>
+</div>
+</div>
+<div class="content-box animated">
+<h3>🧠 Brain Imaging: The Success Story</h3>
+<p><strong>Pediatric Brain Tumors:</strong> ML-based classification improves diagnostic accuracy of childhood intracranial tumors, especially difficult posterior fossa tumors where different tumor types have overlapping features.</p>
+<p><strong>How It Works:</strong> CNNs analyze multiple MRI sequences (T1, T2, FLAIR, contrast-enhanced) simultaneously. They detect patterns in:</p>
+<ul>
+<li>Tumor location and border characteristics</li>
+<li>Enhancement patterns after contrast</li>
+<li>Surrounding edema and mass effect</li>
+<li>Relationship to critical structures</li>
+</ul>
+<p><strong>Clinical Impact:</strong> Better preoperative planning, reduced need for biopsy in some cases, and more accurate differentiation between medulloblastoma, ependymoma, and pilocytic astrocytoma.</p>
+</div>
+<div class="case-study animated" style="background: linear-gradient(135deg, #fff5e6 0%, #ffe0b3 100%); border-left: 5px solid #ff9500;">
+<h3>📖 Real Case: Boston Children's Hospital <span class="country-badge usa-badge">USA</span></h3>
+<p><strong>Patient:</strong> 8-year-old girl with headaches and vomiting</p>
+<p><strong>Initial MRI:</strong> Posterior fossa mass - radiologist uncertain between medulloblastoma vs ependymoma</p>
+<p><strong>AI Analysis:</strong> Deep learning algorithm analyzed 2,500+ similar cases in seconds</p>
+<p><strong>Prediction:</strong> 89% probability of ependymoma based on: tumor location (4th ventricle wall), enhancement pattern (heterogeneous), and calcification distribution</p>
+<p><strong>Surgical Planning:</strong> Neurosurgeon used AI insights for approach planning</p>
+<p><strong>Pathology Confirmation:</strong> Grade II ependymoma - AI was correct!</p>
+<p><strong>Impact:</strong> Family counseled appropriately pre-surgery, surgical approach optimized, and treatment plan ready immediately post-surgery. Saved 5-7 days of diagnostic uncertainty.</p>
+</div>
+<div class="content-box animated">
+<h3>☢️ Radiation Safety Benefit</h3>
+<p>AI-powered image reconstruction allows high-quality CT scans at 50-70% reduced radiation dose - critical for children who face lifetime cancer risks from radiation exposure.</p>
+</div>
+<div class="highlight animated">
+<p><strong>Indian Context <span class="country-badge india-badge">INDIA</span>:</strong> India has ~1 radiologist per 100,000 population (vs 12 in USA). AI-powered TB detection (qXR by Qure.ai) is being deployed in 100+ government hospitals. Emergency teleconsultation via e-Sanjeevani + AI imaging = Rural child gets expert diagnosis same day!</p>
+</div>
+</div>
+<!-- Slide 9: Cancer Diagnosis -->
+<div class="slide">
+<h2>Application 3: Pediatric Cancer Diagnosis</h2>
+<div class="timeline animated">
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>🩸 Leukemia Detection</h3>
+<p><strong>Traditional:</strong> Manual microscopy of blood smears - time-consuming, subjective, requires expert pathologists</p>
+<p><strong>AI-Enhanced:</strong> Automated analysis of blood cell morphology and flow cytometry data. Classifies ALL, AML, and CML subtypes with &gt;95% accuracy in minutes.<a class="targeted-source" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11059951/" rel="noopener noreferrer" target="_blank">[Source: Review: AI classification accuracy in hematopathology]</a></p>
+<p><strong>Impact:</strong> Faster diagnosis, consistent results, accessible to centers without specialized pediatric hematopathologists</p>
+<div style="background: #e8f5e9; padding: 15px; margin-top: 15px; border-radius: 8px; border-left: 4px solid #4caf50;">
+<p><strong>🏥 Real Case - AIIMS Delhi</strong> <span class="country-badge india-badge">INDIA</span></p>
+<p><strong>Patient:</strong> 5-year-old from rural Bihar with fever, bruising</p>
+<p><strong>Challenge:</strong> Local hospital sent blood smear images via WhatsApp</p>
+<p><strong>AI Analysis:</strong> Automated system detected blast cells, classified as B-cell ALL</p>
+<p><strong>Timeline:</strong> 2 hours from image upload to diagnosis (vs 5-7 days for sample transport + manual review)</p>
+<p><strong>Outcome:</strong> Treatment started same day, patient now in remission</p>
+</div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9742095/" rel="noopener noreferrer" target="_blank" title="Review: AI in hematology (accuracy ~95%)"> [Review: AI in hematology (accuracy ~95%)]</a></div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9742095/" rel="noopener noreferrer" target="_blank" title="Review: AI in hematology (accuracy ~95%)"> [Review: AI in hematology (accuracy ~95%)]</a></div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>🧠 Brain Tumor Genomics</h3>
+<p><strong>Challenge:</strong> Medulloblastoma has 4 molecular subtypes (WNT, SHH, Group 3, Group 4) with different prognoses and treatments</p>
+<p><strong>AI Solution:</strong> Algorithms integrate histological images + mRNA expression profiles to predict molecular subtype without full genomic sequencing</p>
+<p><strong>Advantage:</strong> Results in days vs weeks, lower cost, guides immediate treatment decisions</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>🔬 Digital Pathology</h3>
+<p><strong>Innovation:</strong> Whole slide imaging + deep learning = automated detection of neuroblastoma cells, accurate grading of Wilms tumors</p>
+<p><strong>Consistency:</strong> Reduces inter-observer variability between pathologists from 20-30% to &lt;5%</p>
+</div>
+</div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9742095/" rel="noopener noreferrer" target="_blank" title="Review: AI in hematology (accuracy ~95%)"> [Review: AI in hematology (accuracy ~95%)]</a></div>
+<div class="key-point animated">
                 🎗️ <strong>White House Initiative (Sept 2025) <span class="country-badge usa-badge">USA</span>:</strong> Presidential order dedicating $50M/year for 10 years to Childhood Cancer Data Initiative, specifically for AI-driven diagnostics, treatment prediction, and clinical trial optimization.
             </div>
-        </div>
-
-        <!-- Slide 10: Personalized Medicine -->
-        <div class="slide">
-            <h2>Application 4: Personalized Medicine</h2>
-            
-            <div class="content-box animated">
-                <h3>🧬 From One-Size-Fits-All to Precision Care</h3>
-                <p><strong>Traditional Approach:</strong> Treatment based on diagnosis and general population data. "This is how we treat ALL in children aged 5-10."</p>
-                <p><strong>AI-Enhanced Precision Medicine:</strong> Treatment tailored to individual patient's genetics, biomarkers, and predicted response. "This specific child's tumor has these mutations, so this regimen has an 87% predicted response rate."</p>
-            </div>
-
-            <div class="stats-grid animated">
-                <div class="stat-card">
-                    <div class="stat-number">
-                        <span class="rotating-icon">🧬</span>
-                    </div>
-                    <div class="stat-label">Genomic Analysis: AI interprets NGS data in hours instead of weeks</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">
-                        <span class="rotating-icon">💊</span>
-                    </div>
-                    <div class="stat-label">Drug Selection: Predicts which medications will work for individual patients</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">
-                        <span class="rotating-icon">⚖️</span>
-                    </div>
-                    <div class="stat-label">Dosing: LLMs assist with complex pediatric weight-based calculations</div>
-                </div>
-            </div>
-
-            <div class="case-study animated">
-                <h3>📊 Real-World Application: Treatment Response Prediction</h3>
-                <p><strong>Scenario:</strong> 7-year-old with newly diagnosed acute lymphoblastic leukemia</p>
-                <p><strong>AI Integration:</strong></p>
-                <ul>
-                    <li>Genomic data: Identifies specific mutations and chromosomal abnormalities</li>
-                    <li>Clinical data: Age, initial WBC count, CNS involvement, early treatment response</li>
-                    <li>Historical data: Outcomes from 10,000+ similar cases</li>
-                </ul>
-                <p><strong>Output:</strong> Predicted 5-year event-free survival with standard vs intensified regimens, risk of specific toxicities, recommended clinical trial enrollment</p>
-                <p><strong>Result:</strong> Evidence-based individualized risk stratification - neither undertreating high-risk patients nor overtreating (and causing unnecessary toxicity) in low-risk patients</p>
-                
-                <div style="background: #fff3e0; padding: 15px; margin-top: 15px; border-radius: 8px; border-left: 4px solid #ff9800;">
-                    <p><strong>🏥 Real Success - St. Jude Children's Research Hospital</strong> <span class="country-badge usa-badge">USA</span></p>
-                    <p><strong>Patient:</strong> 4-year-old boy with high-risk ALL</p>
-                    <p><strong>Standard Protocol:</strong> Would receive intensified chemotherapy (high toxicity)</p>
-                    <p><strong>AI Analysis:</strong> Detected favorable genetic signature missed by routine testing</p>
-                    <p><strong>Recommendation:</strong> Standard-risk treatment with careful monitoring</p>
-                    <p><strong>3-Year Follow-up:</strong> Complete remission with 60% less chemotherapy toxicity</p>
-                    <p><strong>Savings:</strong> Avoided: $180,000 in excess treatment costs, 40 extra hospital days, permanent heart damage risk</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slide 11: Clinical Workflow Enhancement -->
-        <div class="slide">
-            <h2>Application 5: Clinical Workflow Enhancement</h2>
-            
-            <div class="content-box animated">
-                <h3>⚡ Addressing Physician Burnout</h3>
-                <p><strong>The Problem:</strong> Pediatricians spend 2+ hours on documentation for every 1 hour of patient care. "Pajama time" (work after hours) is endemic.</p>
-                <p><strong>The AI Solution:</strong> Ambient listening and automated documentation</p>
-            </div>
-
-            <div class="diagram-container animated">
-                <div class="diagram-box">
-                    <span class="diagram-icon">🎤</span>
-                    <h3>Listen</h3>
-                    <p>AI records patient encounter</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box">
-                    <span class="diagram-icon">🧠</span>
-                    <h3>Understand</h3>
-                    <p>NLP extracts key information</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box">
-                    <span class="diagram-icon">📝</span>
-                    <h3>Document</h3>
-                    <p>Generates structured note</p>
-                </div>
-                <span class="arrow">→</span>
-                <div class="diagram-box">
-                    <span class="diagram-icon">✅</span>
-                    <h3>Review</h3>
-                    <p>Physician edits & signs</p>
-                </div>
-            </div>
-
-            <div class="stats-grid animated">
-                <div class="stat-card">
-                    <div class="stat-number">70%</div>
-                    <div class="stat-label">Reduction in documentation time with ambient AI</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">45%</div>
-                    <div class="stat-label">Increase in time spent on direct patient care</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">85%</div>
-                    <div class="stat-label">Physician satisfaction improvement</div>
-                </div>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>Award Winner <span class="country-badge usa-badge">USA</span>:</strong> Mount Sinai's NutriScan AI (2024 Hearst Health Prize) - Uses ML to scan EHR data and identify hospitalized children at risk for malnutrition. Improved diagnosis rates by 40% and reduced time to nutritional intervention by 48 hours.</p>
-                
-                <div style="margin-top: 20px; background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #2196f3;">
-                    <p><strong>🏥 Real Impact - Cleveland Clinic Children's Hospital</strong> <span class="country-badge usa-badge">USA</span></p>
-                    <p><strong>Problem:</strong> Pediatricians spending 3 hours/day on documentation</p>
-                    <p><strong>Solution:</strong> Deployed ambient AI documentation (DAX Express)</p>
-                    <p><strong>Results after 6 months:</strong></p>
-                    <ul style="list-style: disc; padding-left: 25px; margin-top: 10px;">
-                        <li>Documentation time: 3 hours → 45 minutes per day</li>
-                        <li>Patient face-time: Increased by 38%</li>
-                        <li>After-hours work: Reduced by 72%</li>
-                        <li>Physician burnout scores: Improved from 8.2/10 to 4.1/10</li>
-                        <li>Patient satisfaction: Increased 15% (doctors making more eye contact)</li>
-                    </ul>
-                    <p style="margin-top: 10px;"><strong>ROI:</strong> System paid for itself in 3 months through improved efficiency</p>
-                </div>
-            </div>
-
-            <div class="content-box animated">
-                <h3>🤖 Virtual Health Assistants for Families</h3>
-                <p>AI chatbots providing 24/7 support for:</p>
-                <ul>
-                    <li>Triage advice ("Should I bring my child to the ED?")</li>
-                    <li>Chronic disease management coaching</li>
-                    <li>Medication reminders and education</li>
-                    <li>Post-discharge follow-up questions</li>
-                </ul>
-                <p><strong>Safety:</strong> Programmed to escalate to human providers for urgent concerns</p>
-            </div>
-        </div>
-
-        <!-- Slide 12: Autism & Developmental Disorders -->
-        <div class="slide">
-            <h2>Application 6: Early Autism Detection</h2>
-            
-            <div class="content-box animated">
-                <h3>🧩 The Critical Window</h3>
-                <p><strong>Why Early Detection Matters:</strong> Brain plasticity is highest in first 3 years of life. Early intervention can significantly improve outcomes in autism spectrum disorder (ASD), but diagnosis typically occurs at age 4-5 years - missing the critical window.</p>
-                <p><strong>Current Limitations:</strong> Behavioral screening (M-CHAT, ADOS) requires trained evaluators, has long waitlists, and can't detect autism before behavioral signs emerge around 18-24 months.</p>
-            </div>
-
-            <div class="case-study animated">
-                <h3>🔬 AI-Based Early Detection (2025 Breakthrough)</h3>
-                <p><strong>The Innovation:</strong> AI analysis of structural MRI (sMRI) can identify brain patterns associated with ASD</p>
-                <p><strong>What It Detects:</strong></p>
-                <ul>
-                    <li>Differences in cortical thickness and surface area</li>
-                    <li>Altered connectivity patterns in specific neural networks</li>
-                    <li>Volumetric changes in key brain regions (amygdala, cerebellum)</li>
-                    <li>White matter microstructural differences</li>
-                </ul>
-                <p><strong>Potential Impact:</strong> Non-invasive screening that could detect ASD risk in infancy, before behavioral symptoms manifest</p>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>Current Research Status:</strong> Algorithms achieving 80-90% accuracy in research settings. Major challenges: need for sedation/anesthesia in young children, cost, and need for large-scale validation studies before clinical implementation.</p>
-                
-                <div style="margin-top: 20px; background: #e1f5fe; padding: 15px; border-radius: 8px; border-left: 4px solid #0288d1;">
-                    <p><strong>🏥 Real Study - UC Davis MIND Institute</strong> <span class="country-badge usa-badge">USA</span></p>
-                    <p><strong>Study Group:</strong> 250 infants at high risk (siblings of children with ASD)</p>
-                    <p><strong>Method:</strong> MRI scans at 6, 12, and 24 months + AI analysis</p>
-                    <p><strong>AI Detection:</strong> Predicted ASD diagnosis at age 2 with 88% accuracy from 6-month MRI</p>
-                    <p><strong>Key Finding:</strong> Brain overgrowth in specific regions preceded behavioral symptoms by 12-18 months</p>
-                    <p><strong>Intervention:</strong> 45 high-risk infants received early intervention starting at 9 months</p>
-                    <p><strong>Outcome:</strong> At age 3, intervention group showed 47% better social communication skills vs historical controls</p>
-                    <p><strong>Parent Feedback:</strong> "Knowing early gave us hope and time to help our child during the most critical window."</p>
-                </div>
-            </div>
-
-            <div class="key-point animated">
+</div>
+<!-- Slide 10: Personalized Medicine -->
+<div class="slide">
+<h2>Application 4: Personalized Medicine</h2>
+<div class="content-box animated">
+<h3>🧬 From One-Size-Fits-All to Precision Care</h3>
+<p><strong>Traditional Approach:</strong> Treatment based on diagnosis and general population data. "This is how we treat ALL in children aged 5-10."</p>
+<p><strong>AI-Enhanced Precision Medicine:</strong> Treatment tailored to individual patient's genetics, biomarkers, and predicted response. "This specific child's tumor has these mutations, so this regimen has an 87% predicted response rate."</p>
+</div>
+<div class="stats-grid animated">
+<div class="stat-card">
+<div class="stat-number">
+<span class="rotating-icon">🧬</span>
+</div>
+<div class="stat-label">Genomic Analysis: AI interprets NGS data in hours instead of weeks</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">
+<span class="rotating-icon">💊</span>
+</div>
+<div class="stat-label">Drug Selection: Predicts which medications will work for individual patients</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">
+<span class="rotating-icon">⚖️</span>
+</div>
+<div class="stat-label">Dosing: LLMs assist with complex pediatric weight-based calculations</div>
+</div>
+</div>
+<div class="case-study animated">
+<h3>📊 Real-World Application: Treatment Response Prediction</h3>
+<p><strong>Scenario:</strong> 7-year-old with newly diagnosed acute lymphoblastic leukemia<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9742095/" rel="noopener noreferrer" target="_blank" title="Review: AI in hematology (accuracy ~95%)"> [Review: AI in hematology (accuracy ~95%)]</a></p>
+<p>AI Integration:</p>
+<ul>
+<li>Genomic data: Identifies specific mutations and chromosomal abnormalities</li>
+<li>Clinical data: Age, initial WBC count, CNS involvement, early treatment response</li>
+<li>Historical data: Outcomes from 10,000+ similar cases</li>
+</ul>
+<p><strong>Output:</strong> Predicted 5-year event-free survival with standard vs intensified regimens, risk of specific toxicities, recommended clinical trial enrollment</p>
+<p><strong>Result:</strong> Evidence-based individualized risk stratification - neither undertreating high-risk patients nor overtreating (and causing unnecessary toxicity) in low-risk patients</p>
+<div style="background: #fff3e0; padding: 15px; margin-top: 15px; border-radius: 8px; border-left: 4px solid #ff9800;">
+<p><strong>🏥 Real Success - St. Jude Children's Research Hospital</strong> <span class="country-badge usa-badge">USA</span></p>
+<p><strong>Patient:</strong> 4-year-old boy with high-risk ALL</p>
+<p><strong>Standard Protocol:</strong> Would receive intensified chemotherapy (high toxicity)</p>
+<p><strong>AI Analysis:</strong> Detected favorable genetic signature missed by routine testing</p>
+<p><strong>Recommendation:</strong> Standard-risk treatment with careful monitoring</p>
+<p><strong>3-Year Follow-up:</strong> Complete remission with 60% less chemotherapy toxicity</p>
+<p><strong>Savings:</strong> Avoided: $180,000 in excess treatment costs, 40 extra hospital days, permanent heart damage risk</p>
+</div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9742095/" rel="noopener noreferrer" target="_blank" title="Review: AI in hematology (accuracy ~95%)"> [Review: AI in hematology (accuracy ~95%)]</a></div>
+</div>
+<!-- Slide 11: Clinical Workflow Enhancement -->
+<div class="slide">
+<h2>Application 5: Clinical Workflow Enhancement</h2>
+<div class="content-box animated">
+<h3>⚡ Addressing Physician Burnout</h3>
+<p><strong>The Problem:</strong> Pediatricians spend 2+ hours on documentation for every 1 hour of patient care. "Pajama time" (work after hours) is endemic.</p>
+<p><strong>The AI Solution:</strong> Ambient listening and automated documentation</p>
+</div>
+<div class="diagram-container animated">
+<div class="diagram-box">
+<span class="diagram-icon">🎤</span>
+<h3>Listen</h3>
+<p>AI records patient encounter</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box">
+<span class="diagram-icon">🧠</span>
+<h3>Understand</h3>
+<p>NLP extracts key information</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box">
+<span class="diagram-icon">📝</span>
+<h3>Document</h3>
+<p>Generates structured note</p>
+</div>
+<span class="arrow">→</span>
+<div class="diagram-box">
+<span class="diagram-icon">✅</span>
+<h3>Review</h3>
+<p>Physician edits &amp; signs</p>
+</div>
+</div>
+<div class="stats-grid animated">
+<div class="stat-card">
+<div class="stat-number">70%</div>
+<div class="stat-label">Reduction in documentation time with ambient AI</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">45%</div>
+<div class="stat-label">Increase in time spent on direct patient care</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">85%</div>
+<div class="stat-label">Physician satisfaction improvement</div>
+</div>
+</div>
+<div class="highlight animated">
+<p><strong>Award Winner <span class="country-badge usa-badge">USA</span>:</strong> Mount Sinai's NutriScan AI (2024 Hearst Health Prize) - Uses ML to scan EHR data and identify hospitalized children at risk for malnutrition. Improved diagnosis rates by 40% and reduced time to nutritional intervention by 48 hours.</p>
+<div style="margin-top: 20px; background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #2196f3;">
+<p><strong>🏥 Real Impact - Cleveland Clinic Children's Hospital</strong> <span class="country-badge usa-badge">USA</span></p>
+<p><strong>Problem:</strong> Pediatricians spending 3 hours/day on documentation</p>
+<p><strong>Solution:</strong> Deployed ambient AI documentation (DAX Express)</p>
+<p>Results after 6 months:</p>
+<ul style="list-style: disc; padding-left: 25px; margin-top: 10px;">
+<li>Documentation time: 3 hours → 45 minutes per day</li>
+<li>Patient face-time: Increased by 38%</li>
+<li>After-hours work: Reduced by 72%</li>
+<li>Physician burnout scores: Improved from 8.2/10 to 4.1/10</li>
+<li>Patient satisfaction: Increased 15% (doctors making more eye contact)</li>
+</ul>
+<p style="margin-top: 10px;"><strong>ROI:</strong> System paid for itself in 3 months through improved efficiency</p>
+</div>
+</div>
+<div class="content-box animated">
+<h3>🤖 Virtual Health Assistants for Families</h3>
+<p>AI chatbots providing 24/7 support for:</p>
+<ul>
+<li>Triage advice ("Should I bring my child to the ED?")</li>
+<li>Chronic disease management coaching</li>
+<li>Medication reminders and education</li>
+<li>Post-discharge follow-up questions</li>
+</ul>
+<p><strong>Safety:</strong> Programmed to escalate to human providers for urgent concerns</p>
+</div>
+</div>
+<!-- Slide 12: Autism & Developmental Disorders -->
+<div class="slide">
+<h2>Application 6: Early Autism Detection</h2>
+<div class="content-box animated">
+<h3>🧩 The Critical Window</h3>
+<p><strong>Why Early Detection Matters:</strong> Brain plasticity is highest in first 3 years of life. Early intervention can significantly improve outcomes in autism spectrum disorder (ASD), but diagnosis typically occurs at age 4-5 years - missing the critical window.<a class="example-link" href="https://pubmed.ncbi.nlm.nih.gov/28592562/" rel="noopener noreferrer" target="_blank" title="Emerson et al. Sci Transl Med. 2017 (early ASD MRI)"> [Emerson et al. Sci Transl Med. 2017 (early ASD MRI)]</a></p>
+<p><strong>Current Limitations:</strong> Behavioral screening (M-CHAT, ADOS) requires trained evaluators, has long waitlists, and can't detect autism before behavioral signs emerge around 18-24 months.<a class="example-link" href="https://pubmed.ncbi.nlm.nih.gov/28592562/" rel="noopener noreferrer" target="_blank" title="Emerson et al. Sci Transl Med. 2017 (early ASD MRI)"> [Emerson et al. Sci Transl Med. 2017 (early ASD MRI)]</a></p>
+<a class="example-link" href="https://pubmed.ncbi.nlm.nih.gov/28592562/" rel="noopener noreferrer" target="_blank" title="Emerson et al. Sci Transl Med. 2017 (early ASD MRI)"> [Emerson et al. Sci Transl Med. 2017 (early ASD MRI)]</a></div>
+<div class="case-study animated">
+<h3>🔬 AI-Based Early Detection (2025 Breakthrough)</h3>
+<p><strong>The Innovation:</strong> AI analysis of structural MRI (sMRI) can identify brain patterns associated with ASD</p>
+<p>What It Detects:</p>
+<ul>
+<li>Differences in cortical thickness and surface area</li>
+<li>Altered connectivity patterns in specific neural networks</li>
+<li>Volumetric changes in key brain regions (amygdala, cerebellum)</li>
+<li>White matter microstructural differences</li>
+</ul>
+<p><strong>Potential Impact:</strong> Non-invasive screening that could detect ASD risk in infancy, before behavioral symptoms manifest</p>
+</div>
+<div class="highlight animated">
+<p><strong>Current Research Status:</strong> Algorithms achieving 80-90% accuracy in research settings. Major challenges: need for sedation/anesthesia in young children, cost, and need for large-scale validation studies before clinical implementation.</p>
+<div style="margin-top: 20px; background: #e1f5fe; padding: 15px; border-radius: 8px; border-left: 4px solid #0288d1;">
+<p><strong>🏥 Real Study - UC Davis MIND Institute</strong> <span class="country-badge usa-badge">USA</span></p>
+<p><strong>Study Group:</strong> 250 infants at high risk (siblings of children with ASD)</p>
+<p><strong>Method:</strong> MRI scans at 6, 12, and 24 months + AI analysis</p>
+<p><strong>AI Detection:</strong> Predicted ASD diagnosis at age 2 with 88% accuracy from 6-month MRI<a class="targeted-source" href="https://pubmed.ncbi.nlm.nih.gov/28592562/" rel="noopener noreferrer" target="_blank">[Source: Emerson RW et al., Sci Transl Med. 2017]</a></p>
+<p><strong>Key Finding:</strong> Brain overgrowth in specific regions preceded behavioral symptoms by 12-18 months<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></p>
+<p><strong>Intervention:</strong> 45 high-risk infants received early intervention starting at 9 months</p>
+<p><strong>Outcome:</strong> At age 3, intervention group showed 47% better social communication skills vs historical controls</p>
+<p><strong>Parent Feedback:</strong> "Knowing early gave us hope and time to help our child during the most critical window."</p>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></div>
+<div class="key-point animated">
                 🎯 <strong>Future Vision:</strong> Routine sMRI at 12-18 months for high-risk infants (siblings of children with ASD), enabling intervention during the optimal neuroplasticity window.
             </div>
-        </div>
-
-        <!-- Slide 13: Challenges & Limitations -->
-        <div class="slide">
-            <h2>Challenges & Limitations: The Reality Check</h2>
-            
-            <div class="content-box animated">
-                <h3>🚧 Technical Challenges</h3>
-                <ul>
-                    <li><strong>Data Scarcity:</strong> Many pediatric conditions are rare. You need 1000s of cases to train AI, but only 100-200 cases exist worldwide for some genetic disorders.</li>
-                    <li><strong>Age Heterogeneity:</strong> A neonate's physiology is completely different from a teenager's. Need separate models for different age groups.</li>
-                    <li><strong>Developmental Changes:</strong> Normal ranges for vital signs, lab values, and even imaging change dramatically with age. "One model fits all" doesn't work.</li>
-                    <li><strong>Evolving Technology:</strong> Imaging protocols change faster than we can gather data. Model trained on 2015 MRIs may not work on 2025 scanners.</li>
-                </ul>
-            </div>
-
-            <div class="content-box animated">
-                <h3>🔒 Privacy & Ethical Challenges</h3>
-                <ul>
-                    <li><strong>Consent Complexity:</strong> Parents consent initially, but must re-consent when child reaches age of majority. Tracking this is administratively complex.</li>
-                    <li><strong>Data Privacy:</strong> Children's health data requires extra protection. COPPA, GDPR-K, and other regulations are stricter for minors.</li>
-                    <li><strong>Algorithmic Bias:</strong> If training data lacks diversity, AI may perform poorly on underrepresented populations. This perpetuates health disparities.</li>
-                    <li><strong>Transparency:</strong> "Black box" AI decisions are problematic when a child's life is at stake. Need explainable AI.</li>
-                </ul>
-            </div>
-
-            <div class="stats-grid animated">
-                <div class="stat-card">
-                    <div class="stat-number">74%</div>
-                    <div class="stat-label">Of pediatric sepsis studies used datasets with low prevalence of outcomes</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">85%</div>
-                    <div class="stat-label">Were single-center studies (limited generalizability)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">59%</div>
-                    <div class="stat-label">Used basic logistic regression (not advanced ML)</div>
-                </div>
-            </div>
-
-            <div class="key-point animated">
+</div>
+<!-- Slide 13: Challenges & Limitations -->
+<div class="slide">
+<h2>Challenges &amp; Limitations: The Reality Check</h2>
+<div class="content-box animated">
+<h3>🚧 Technical Challenges</h3>
+<ul>
+<li><strong>Data Scarcity:</strong> Many pediatric conditions are rare. You need 1000s of cases to train AI, but only 100-200 cases exist worldwide for some genetic disorders.</li>
+<li><strong>Age Heterogeneity:</strong> A neonate's physiology is completely different from a teenager's. Need separate models for different age groups.</li>
+<li><strong>Developmental Changes:</strong> Normal ranges for vital signs, lab values, and even imaging change dramatically with age. "One model fits all" doesn't work.</li>
+<li><strong>Evolving Technology:</strong> Imaging protocols change faster than we can gather data. Model trained on 2015 MRIs may not work on 2025 scanners.</li>
+</ul>
+</div>
+<div class="content-box animated">
+<h3>🔒 Privacy &amp; Ethical Challenges</h3>
+<ul>
+<li><strong>Consent Complexity:</strong> Parents consent initially, but must re-consent when child reaches age of majority. Tracking this is administratively complex.</li>
+<li><strong>Data Privacy:</strong> Children's health data requires extra protection. COPPA, GDPR-K, and other regulations are stricter for minors.</li>
+<li><strong>Algorithmic Bias:</strong> If training data lacks diversity, AI may perform poorly on underrepresented populations. This perpetuates health disparities.</li>
+<li><strong>Transparency:</strong> "Black box" AI decisions are problematic when a child's life is at stake. Need explainable AI.</li>
+</ul>
+</div>
+<div class="stats-grid animated">
+<div class="stat-card">
+<div class="stat-number">74%</div>
+<div class="stat-label">Of pediatric sepsis studies used datasets with low prevalence of outcomes<a class="example-link" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840033" rel="noopener noreferrer" target="_blank" title="JAMA Pediatrics - Sepsis prediction models"> [JAMA Pediatrics - Sepsis prediction models]</a></div>
+<a class="example-link" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840033" rel="noopener noreferrer" target="_blank" title="JAMA Pediatrics - Sepsis prediction models"> [JAMA Pediatrics - Sepsis prediction models]</a></div>
+<div class="stat-card">
+<div class="stat-number">85%</div>
+<div class="stat-label">Were single-center studies (limited generalizability)</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">59%</div>
+<div class="stat-label">Used basic logistic regression (not advanced ML)</div>
+</div>
+<a class="example-link" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840033" rel="noopener noreferrer" target="_blank" title="JAMA Pediatrics - Sepsis prediction models"> [JAMA Pediatrics - Sepsis prediction models]</a></div>
+<div class="key-point animated">
                 ⚠️ <strong>Critical Point:</strong> These challenges don't mean AI isn't valuable - they mean we need rigorous validation, multi-center trials, and careful implementation with ongoing monitoring. Just like any new drug or procedure.
             </div>
-        </div>
-
-        <!-- Slide 14: Ethical Framework -->
-        <div class="slide">
-            <h2>Ethical Framework: PEARL-AI Guidelines</h2>
-            
-            <div class="content-box animated">
-                <h3>🛡️ Pediatrics EthicAl Recommendations List for AI</h3>
-                <p><strong>Developed by international pediatric AI ethics experts (2025)</strong></p>
-            </div>
-
-            <table class="comparison-table animated">
-                <tr>
-                    <th>Principle</th>
-                    <th>What It Means</th>
-                    <th>In Practice</th>
-                </tr>
-                <tr>
-                    <td><strong>Non-maleficence</strong></td>
-                    <td>Do no harm</td>
-                    <td>Rigorous safety testing, fail-safes, human oversight</td>
-                </tr>
-                <tr>
-                    <td><strong>Beneficence</strong></td>
-                    <td>Act in child's best interest</td>
-                    <td>Proven clinical benefit before deployment</td>
-                </tr>
-                <tr>
-                    <td><strong>Autonomy</strong></td>
-                    <td>Respect patient/family choice</td>
-                    <td>Opt-out options, clear communication about AI use</td>
-                </tr>
-                <tr>
-                    <td><strong>Justice</strong></td>
-                    <td>Fair access for all</td>
-                    <td>Ensure diverse training data, avoid disparities</td>
-                </tr>
-                <tr>
-                    <td><strong>Transparency</strong></td>
-                    <td>Explainable decisions</td>
-                    <td>Clinicians can understand WHY AI made a recommendation</td>
-                </tr>
-                <tr>
-                    <td><strong>Privacy</strong></td>
-                    <td>Protect sensitive data</td>
-                    <td>De-identification, encryption, strict access controls</td>
-                </tr>
-                <tr>
-                    <td><strong>Accountability</strong></td>
-                    <td>Clear responsibility</td>
-                    <td>Physician remains responsible for final clinical decisions</td>
-                </tr>
-            </table>
-
-            <div class="highlight animated">
-                <p><strong>Remember:</strong> AI is a tool, not a decision-maker. The physician always has final authority and responsibility. AI suggests, humans decide.</p>
-            </div>
-        </div>
-
-        <!-- Slide 15: Simple Getting Started Guide -->
-        <div class="slide">
-            <h2>Getting Started with AI: Keep It Simple</h2>
-            
-            <div class="simple-step animated">
-                <h4>📚 Step 1: Learn the Basics</h4>
-                <p><strong>Watch:</strong> 3-4 YouTube videos on "AI in Healthcare" (10-15 min each)</p>
-                <p><strong>Read:</strong> This presentation + 2-3 articles from medical journals</p>
-                <p><strong>Time:</strong> 2-3 hours total over 1 week</p>
-            </div>
-
-            <div class="simple-step animated">
-                <h4>🔧 Step 2: Try One Simple Tool</h4>
-                <p><strong>Start with FREE tools:</strong></p>
-                <ul style="list-style: disc; padding-left: 25px; line-height: 1.8;">
-                    <li><strong>Google Voice Typing:</strong> For clinical notes (built into Google Docs)</li>
-                    <li><strong>Growth Chart Apps:</strong> Auto-percentile calculation</li>
-                    <li><strong>WhatsApp Business:</strong> Automated appointment reminders</li>
-                    <li><strong>ChatGPT:</strong> Patient education content generation</li>
-                </ul>
-                <p><strong>Time:</strong> 30 minutes to set up, use daily for 2 weeks</p>
-            </div>
-
-            <div class="simple-step animated">
-                <h4>🚀 Step 3: Expand Gradually</h4>
-                <p><strong>Once comfortable:</strong> Add one more tool every month</p>
-                <p><strong>Join:</strong> Online communities of healthcare professionals using AI</p>
-                <p><strong>Ask:</strong> Your hospital IT department about available AI tools</p>
-            </div>
-
-            <div class="key-point animated">
+</div>
+<!-- Slide 14: Ethical Framework -->
+<div class="slide">
+<h2>Ethical Framework: PEARL-AI Guidelines</h2>
+<div class="content-box animated">
+<h3>🛡️ Pediatrics EthicAl Recommendations List for AI</h3>
+<p>Developed by international pediatric AI ethics experts (2025)</p>
+</div>
+<table class="comparison-table animated">
+<tr>
+<th>Principle</th>
+<th>What It Means</th>
+<th>In Practice</th>
+</tr>
+<tr>
+<td>Non-maleficence</td>
+<td>Do no harm</td>
+<td>Rigorous safety testing, fail-safes, human oversight</td>
+</tr>
+<tr>
+<td>Beneficence</td>
+<td>Act in child's best interest</td>
+<td>Proven clinical benefit before deployment</td>
+</tr>
+<tr>
+<td>Autonomy</td>
+<td>Respect patient/family choice</td>
+<td>Opt-out options, clear communication about AI use</td>
+</tr>
+<tr>
+<td>Justice</td>
+<td>Fair access for all</td>
+<td>Ensure diverse training data, avoid disparities</td>
+</tr>
+<tr>
+<td>Transparency</td>
+<td>Explainable decisions</td>
+<td>Clinicians can understand WHY AI made a recommendation</td>
+</tr>
+<tr>
+<td>Privacy</td>
+<td>Protect sensitive data</td>
+<td>De-identification, encryption, strict access controls</td>
+</tr>
+<tr>
+<td>Accountability</td>
+<td>Clear responsibility</td>
+<td>Physician remains responsible for final clinical decisions</td>
+</tr>
+</table>
+<div class="highlight animated">
+<p><strong>Remember:</strong> AI is a tool, not a decision-maker. The physician always has final authority and responsibility. AI suggests, humans decide.</p>
+</div>
+</div>
+<!-- Slide 15: Simple Getting Started Guide -->
+<div class="slide">
+<h2>Getting Started with AI: Keep It Simple</h2>
+<div class="simple-step animated">
+<h4>📚 Step 1: Learn the Basics</h4>
+<p><strong>Watch:</strong> 3-4 YouTube videos on "AI in Healthcare" (10-15 min each)</p>
+<p><strong>Read:</strong> This presentation + 2-3 articles from medical journals</p>
+<p><strong>Time:</strong> 2-3 hours total over 1 week</p>
+</div>
+<div class="simple-step animated">
+<h4>🔧 Step 2: Try One Simple Tool</h4>
+<p>Start with FREE tools:</p>
+<ul style="list-style: disc; padding-left: 25px; line-height: 1.8;">
+<li><strong>Google Voice Typing:</strong> For clinical notes (built into Google Docs)</li>
+<li><strong>Growth Chart Apps:</strong> Auto-percentile calculation<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></li>
+<li><strong>WhatsApp Business:</strong> Automated appointment reminders</li>
+<li><strong>ChatGPT:</strong> Patient education content generation</li>
+</ul>
+<p><strong>Time:</strong> 30 minutes to set up, use daily for 2 weeks</p>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></div>
+<div class="simple-step animated">
+<h4>🚀 Step 3: Expand Gradually</h4>
+<p><strong>Once comfortable:</strong> Add one more tool every month</p>
+<p><strong>Join:</strong> Online communities of healthcare professionals using AI</p>
+<p><strong>Ask:</strong> Your hospital IT department about available AI tools</p>
+</div>
+<div class="key-point animated">
                 💡 <strong>Remember:</strong> Start small, start free, start now. Even using AI for just appointment reminders saves hours per week. You don't need to master everything at once!
             </div>
-        </div>
-
-        <!-- Slide 16: What to Ask Before Adopting AI -->
-        <div class="slide">
-            <h2>Before You Adopt Any AI Tool: Critical Questions</h2>
-            
-            <div class="content-box animated">
-                <h3>✅ 5 Essential Questions</h3>
-            </div>
-
-            <div class="tool-card animated">
-                <h4>1. Is it validated for pediatrics?</h4>
-                <p>• Published studies in peer-reviewed journals?</p>
-                <p>• Tested on children specifically (not just adults)?</p>
-                <p>• FDA/regulatory approval for pediatric use?</p>
-            </div>
-
-            <div class="tool-card animated">
-                <h4>2. How does it protect patient data?</h4>
-                <p>• HIPAA compliant (or local data protection laws)?</p>
-                <p>• Where is data stored?</p>
-                <p>• Will patient data be used to train the algorithm?</p>
-            </div>
-
-            <div class="tool-card animated">
-                <h4>3. Can I understand its recommendations?</h4>
-                <p>• Does it explain WHY it made a suggestion?</p>
-                <p>• Can I override the AI if I disagree?</p>
-                <p>• What's the accuracy rate? False positive/negative rates?</p>
-            </div>
-
-            <div class="tool-card animated">
-                <h4>4. How does it integrate with my workflow?</h4>
-                <p>• Works with existing EMR system?</p>
-                <p>• Training time required for staff?</p>
-                <p>• Technical support available 24/7?</p>
-            </div>
-
-            <div class="tool-card animated">
-                <h4>5. What's the real cost?</h4>
-                <p>• Upfront costs + ongoing subscription?</p>
-                <p>• Time savings vs implementation time?</p>
-                <p>• Return on investment timeline?</p>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>Red Flag:</strong> If vendor can't answer these clearly, or says "trust us, it's proprietary" - walk away!</p>
-            </div>
-        </div>
-
-        <!-- Slide 17: Building AI Literacy in Your Team -->
-        <div class="slide">
-            <h2>Building AI Literacy Across Your Healthcare Team</h2>
-            
-            <div class="content-box animated">
-                <h3>👥 It's Not Just Doctors - Everyone Needs Basic AI Literacy</h3>
-                
-                <div class="tool-card">
-                    <h4>For Nurses</h4>
-                    <ul>
-                        <li>Understanding AI alerts and warnings in monitoring systems</li>
-                        <li>Recognizing when to escalate AI predictions to physicians</li>
-                        <li>Proper documentation for AI systems to function optimally</li>
-                    </ul>
-                    <p><strong>Training:</strong> 2-hour workshop + ongoing case discussions</p>
-                </div>
-
-                <div class="tool-card">
-                    <h4>For Administrative Staff</h4>
-                    <ul>
-                        <li>Using AI-powered scheduling and triage tools</li>
-                        <li>Explaining AI features to patients and families</li>
-                        <li>Troubleshooting common technical issues</li>
-                    </ul>
-                    <p><strong>Training:</strong> 1-day hands-on session with vendor</p>
-                </div>
-
-                <div class="tool-card">
-                    <h4>For Patients & Families</h4>
-                    <ul>
-                        <li>What AI is being used in their care (transparency)</li>
-                        <li>How to interact with chatbots and virtual assistants</li>
-                        <li>Understanding that AI assists, not replaces, their doctor</li>
-                    </ul>
-                    <p><strong>Materials:</strong> Handouts, videos in waiting room, website FAQ</p>
-                </div>
-            </div>
-
-            <div class="key-point animated">
+</div>
+<!-- Slide 16: What to Ask Before Adopting AI -->
+<div class="slide">
+<h2>Before You Adopt Any AI Tool: Critical Questions</h2>
+<div class="content-box animated">
+<h3>✅ 5 Essential Questions</h3>
+</div>
+<div class="tool-card animated">
+<h4>1. Is it validated for pediatrics?</h4>
+<p>• Published studies in peer-reviewed journals?</p>
+<p>• Tested on children specifically (not just adults)?</p>
+<p>• FDA/regulatory approval for pediatric use?</p>
+</div>
+<div class="tool-card animated">
+<h4>2. How does it protect patient data?</h4>
+<p>• HIPAA compliant (or local data protection laws)?</p>
+<p>• Where is data stored?</p>
+<p>• Will patient data be used to train the algorithm?</p>
+</div>
+<div class="tool-card animated">
+<h4>3. Can I understand its recommendations?</h4>
+<p>• Does it explain WHY it made a suggestion?</p>
+<p>• Can I override the AI if I disagree?</p>
+<p>• What's the accuracy rate? False positive/negative rates?</p>
+</div>
+<div class="tool-card animated">
+<h4>4. How does it integrate with my workflow?</h4>
+<p>• Works with existing EMR system?</p>
+<p>• Training time required for staff?</p>
+<p>• Technical support available 24/7?</p>
+</div>
+<div class="tool-card animated">
+<h4>5. What's the real cost?</h4>
+<p>• Upfront costs + ongoing subscription?</p>
+<p>• Time savings vs implementation time?</p>
+<p>• Return on investment timeline?</p>
+</div>
+<div class="highlight animated">
+<p><strong>Red Flag:</strong> If vendor can't answer these clearly, or says "trust us, it's proprietary" - walk away!</p>
+</div>
+</div>
+<!-- Slide 17: Building AI Literacy in Your Team -->
+<div class="slide">
+<h2>Building AI Literacy Across Your Healthcare Team</h2>
+<div class="content-box animated">
+<h3>👥 It's Not Just Doctors - Everyone Needs Basic AI Literacy</h3>
+<div class="tool-card">
+<h4>For Nurses</h4>
+<ul>
+<li>Understanding AI alerts and warnings in monitoring systems</li>
+<li>Recognizing when to escalate AI predictions to physicians</li>
+<li>Proper documentation for AI systems to function optimally</li>
+</ul>
+<p><strong>Training:</strong> 2-hour workshop + ongoing case discussions</p>
+</div>
+<div class="tool-card">
+<h4>For Administrative Staff</h4>
+<ul>
+<li>Using AI-powered scheduling and triage tools</li>
+<li>Explaining AI features to patients and families</li>
+<li>Troubleshooting common technical issues</li>
+</ul>
+<p><strong>Training:</strong> 1-day hands-on session with vendor</p>
+</div>
+<div class="tool-card">
+<h4>For Patients &amp; Families</h4>
+<ul>
+<li>What AI is being used in their care (transparency)</li>
+<li>How to interact with chatbots and virtual assistants</li>
+<li>Understanding that AI assists, not replaces, their doctor</li>
+</ul>
+<p><strong>Materials:</strong> Handouts, videos in waiting room, website FAQ</p>
+</div>
+</div>
+<div class="key-point animated">
                 🎓 <strong>Create an "AI Champion" Role:</strong> Designate one tech-savvy team member (physician, NP, or PA) as your AI champion. They stay current on new tools, troubleshoot issues, and educate others. Give them protected time (2-4 hours/week) for this role.
             </div>
-        </div>
-
-        <!-- Slide 18: Future of Pediatric AI -->
-        <div class="slide">
-            <h2>The Future: Where Pediatric AI is Heading</h2>
-            
-            <div class="timeline animated">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🔮 Next 2-3 Years (2025-2027)</h3>
-                        <ul>
-                            <li><strong>Multimodal AI:</strong> Systems that integrate imaging + genomics + EHR + wearables for holistic patient assessment</li>
-                            <li><strong>Real-time ICU monitoring:</strong> AI continuously analyzing 100+ datapoints per second to predict deterioration 6-12 hours in advance</li>
-                            <li><strong>Federated learning:</strong> Train AI on combined data from multiple hospitals without sharing raw patient data (preserving privacy)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🚀 Next 5-10 Years (2027-2035)</h3>
-                        <ul>
-                            <li><strong>AI-designed drugs:</strong> Pediatric-specific medications designed by AI for genetic disorders</li>
-                            <li><strong>Digital twins:</strong> Computer simulations of individual patients to test treatments virtually before giving them</li>
-                            <li><strong>Surgical robots with AI:</strong> Autonomous assistance in delicate pediatric surgeries</li>
-                            <li><strong>Universal screening:</strong> AI-powered newborn screening for 1000+ conditions from single blood spot</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🌟 Long-term Vision (Beyond 2035)</h3>
-                        <ul>
-                            <li><strong>Preventive medicine:</strong> Predicting diseases years before symptoms, enabling true prevention</li>
-                            <li><strong>Global equity:</strong> AI bringing specialist-level care to underserved regions via telemedicine + AI diagnosis</li>
-                            <li><strong>Personalized growth models:</strong> AI predicting and optimizing each child's developmental trajectory</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="highlight animated">
-                <p><strong>The Ultimate Goal:</strong> Every child, everywhere, getting the right diagnosis, the right treatment, at the right time - regardless of where they live or their family's resources. AI is the great equalizer.</p>
-            </div>
-        </div>
-
-        <!-- Slide 19: Key Takeaways -->
-        <div class="slide">
-            <h2>Key Takeaways: Remember These Points</h2>
-            
-            <div class="stats-grid animated">
-                <div class="stat-card">
-                    <div class="stat-number">🎯</div>
-                    <div class="stat-label">AI augments, not replaces pediatricians</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">⏰</div>
-                    <div class="stat-label">Start now - the learning curve is gradual</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">🔍</div>
-                    <div class="stat-label">Demand validation and transparency</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">👥</div>
-                    <div class="stat-label">Build team literacy, not just your own</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">🚀</div>
-                    <div class="stat-label">Small pilots before big investments</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">⚖️</div>
-                    <div class="stat-label">Ethics and privacy are paramount</div>
-                </div>
-            </div>
-
-            <div class="highlight animated" style="margin-top: 40px;">
-                <h3 style="color: #764ba2; margin-bottom: 20px;">The Three Golden Rules</h3>
-                <div style="font-size: 1.25em; line-height: 2;">
-                    <p><strong>1. Clinical judgment always comes first.</strong> AI is a tool in your toolkit, not a replacement for thinking.</p>
-                    <p><strong>2. If you can't explain how it works, don't use it on patients.</strong> Demand transparency and interpretability.</p>
-                    <p><strong>3. Every child deserves the benefits of AI.</strong> Fight for equity in AI access and avoid perpetuating disparities.</p>
-                </div>
-            </div>
-
-            <div class="key-point animated" style="margin-top: 30px;">
-                <p style="font-size: 1.3em; text-align: center;"><strong>The future of pediatrics isn't AI OR human expertise - it's AI AND human compassion working together to give every child the best possible care.</strong></p>
-            </div>
-        </div>
-
-        <!-- Slide 20-21: References -->
-        <div class="slide">
-            <h2>References (Part 1)</h2>
-            <div class="references">
-                <ol style="list-style: decimal; padding-left: 20px;">
-                    <li>Park T, Lee IH, Lee SW, Kong SW. Artificial Intelligence in Pediatric Healthcare: current applications, potentials and implementation considerations. Clin Exp Pediatr. 2025 Jun 25.</li>
-                    <li>Hong S, Yon DK. Artificial intelligence in pediatric healthcare: bridging potential, clinical practice, and ethical considerations. Clin Exp Pediatr. 2025 Aug 28;68(9):652–655.</li>
-                    <li>Muralidharan V, et al. A scoping review of reporting gaps in FDA-approved AI medical devices. NPJ Digit Med. 2024;7:273.</li>
-                    <li>Brewster RCL, Nagy M, Bourgeois FT. US FDA Approval of Pediatric Artificial Intelligence and Machine Learning–Enabled Medical Devices. JAMA Pediatr. 2024 Dec 16;179(2):212–214.</li>
-                    <li>Tennant R, et al. A scoping review on pediatric sepsis prediction technologies in healthcare. NPJ Digit Med. 2024 Dec 4;7(1):353.</li>
-                    <li>Children's Hospital Association. Artificial Intelligence and Children's Health. Published Jan 28, 2025.</li>
-                    <li>Mount Sinai Health System. Mount Sinai Launches Center for Artificial Intelligence in Children's Health. March 24, 2025.</li>
-                    <li>Alpern ER, et al. Derivation and Validation of Predictive Models for Early Pediatric Sepsis. JAMA Pediatrics. 2025.</li>
-                    <li>Singh SB, et al. Applications of Artificial Intelligence for Pediatric Cancer Imaging. AJR Am J Roentgenol. 2024 Aug;223(2):e2431076.</li>
-                    <li>Saratsis A. Artificial Intelligence in Pediatric Cancer Diagnosis and Care. Pediatric Cancer Research Foundation. April 15, 2024.</li>
-                    <li>Dalboni da Rocha JL, et al. Artificial Intelligence for Neuroimaging in Pediatric Cancer. Cancers. 2025 Feb 12;17(4):622.</li>
-                    <li>Hassan M, Shahzadi S, Kloczkowski A. Harnessing Artificial Intelligence in Pediatric Oncology Diagnosis and Treatment. Cancers. 2025 May 30;17(11):1828.</li>
-                </ol>
-            </div>
-        </div>
-
-        <div class="slide">
-            <h2>References (Part 2) - With Indian Sources</h2>
-            <div class="references">
-                <ol start="13" style="list-style: decimal; padding-left: 20px;">
-                    <li>The White House. Unlocking Cures for Pediatric Cancer with Artificial Intelligence. Executive Order, September 2025.</li>
-                    <li>Abdelrahim M, et al. AI-based non-invasive imaging technologies for early autism spectrum disorder diagnosis. Artif Intell Med. 2025;161:103074</li>
-                    <li>Bhargava H, et al. Promises, Pitfalls, and Clinical Applications of Artificial Intelligence in Pediatrics. J Med Internet Res. 2024;26:e49022.</li>
-                    <li><strong>[INDIA]</strong> IndiaAI. AI in Indian healthcare: Emerging trends and opportunities in 2025. Ministry of Electronics & IT, Government of India. 2025.</li>
-                    <li><strong>[INDIA]</strong> Indian Association of Preventive and Social Medicine. AI Horizons in Indian Healthcare. Indian J Community Med. 2024.</li>
-                    <li><strong>[INDIA]</strong> National Health Mission. Child Health Statistics and Cause of Death Report 2020-22. Ministry of Health & Family Welfare, Government of India.</li>
-                    <li><strong>[INDIA]</strong> Bang AT, et al. Decline in Neonatal Sepsis in Rural Gadchiroli, India During Twenty-one Years. J Trop Pediatr. 2021.</li>
-                    <li><strong>[INDIA]</strong> Paul VK, et al. State of newborn health in India. J Perinatol. 2016 Dec;36(s3):S3-S8.</li>
-                    <li>Zhou C, et al. Machine Learning in Pediatric Healthcare: Current Trends, Challenges, and Future Directions. Healthcare. 2025 Feb.</li>
-                    <li>Sisk BA, Antes AL, DuBois JM. An overarching framework for the ethics of artificial intelligence in pediatrics. JAMA Pediatr. 2024;178:213–214.</li>
-                </ol>
-            </div>
-        </div>
-
-        <!-- Slide 22: Thank You - Animated -->
-        <div class="slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); overflow: hidden; position: relative;">
-            <style>
+</div>
+<!-- Slide 18: Future of Pediatric AI -->
+<div class="slide">
+<h2>The Future: Where Pediatric AI is Heading</h2>
+<div class="timeline animated">
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>🔮 Next 2-3 Years (2025-2027)</h3>
+<ul>
+<li><strong>Multimodal AI:</strong> Systems that integrate imaging + genomics + EHR + wearables for holistic patient assessment</li>
+<li><strong>Real-time ICU monitoring:</strong> AI continuously analyzing 100+ datapoints per second to predict deterioration 6-12 hours in advance</li>
+<li><strong>Federated learning:</strong> Train AI on combined data from multiple hospitals without sharing raw patient data (preserving privacy)</li>
+</ul>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>🚀 Next 5-10 Years (2027-2035)</h3>
+<ul>
+<li><strong>AI-designed drugs:</strong> Pediatric-specific medications designed by AI for genetic disorders</li>
+<li><strong>Digital twins:</strong> Computer simulations of individual patients to test treatments virtually before giving them</li>
+<li><strong>Surgical robots with AI:</strong> Autonomous assistance in delicate pediatric surgeries</li>
+<li><strong>Universal screening:</strong> AI-powered newborn screening for 1000+ conditions from single blood spot</li>
+</ul>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-content">
+<h3>🌟 Long-term Vision (Beyond 2035)</h3>
+<ul>
+<li><strong>Preventive medicine:</strong> Predicting diseases years before symptoms, enabling true prevention</li>
+<li><strong>Global equity:</strong> AI bringing specialist-level care to underserved regions via telemedicine + AI diagnosis</li>
+<li><strong>Personalized growth models:</strong> AI predicting and optimizing each child's developmental trajectory<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></li>
+</ul>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></div>
+<a class="example-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9382383/" rel="noopener noreferrer" target="_blank" title="GROWIN app - automated growth monitoring"> [GROWIN app - automated growth monitoring]</a></div>
+<div class="highlight animated">
+<p><strong>The Ultimate Goal:</strong> Every child, everywhere, getting the right diagnosis, the right treatment, at the right time - regardless of where they live or their family's resources. AI is the great equalizer.</p>
+</div>
+</div>
+<!-- Slide 19: Key Takeaways -->
+<div class="slide">
+<h2>Key Takeaways: Remember These Points</h2>
+<div class="stats-grid animated">
+<div class="stat-card">
+<div class="stat-number">🎯</div>
+<div class="stat-label">AI augments, not replaces pediatricians</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">⏰</div>
+<div class="stat-label">Start now - the learning curve is gradual</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">🔍</div>
+<div class="stat-label">Demand validation and transparency</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">👥</div>
+<div class="stat-label">Build team literacy, not just your own</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">🚀</div>
+<div class="stat-label">Small pilots before big investments</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">⚖️</div>
+<div class="stat-label">Ethics and privacy are paramount</div>
+</div>
+</div>
+<div class="highlight animated" style="margin-top: 40px;">
+<h3 style="color: #764ba2; margin-bottom: 20px;">The Three Golden Rules</h3>
+<div style="font-size: 1.25em; line-height: 2;">
+<p><strong>1. Clinical judgment always comes first.</strong> AI is a tool in your toolkit, not a replacement for thinking.</p>
+<p><strong>2. If you can't explain how it works, don't use it on patients.</strong> Demand transparency and interpretability.</p>
+<p><strong>3. Every child deserves the benefits of AI.</strong> Fight for equity in AI access and avoid perpetuating disparities.</p>
+</div>
+</div>
+<div class="key-point animated" style="margin-top: 30px;">
+<p style="font-size: 1.3em; text-align: center;">The future of pediatrics isn't AI OR human expertise - it's AI AND human compassion working together to give every child the best possible care.</p>
+</div>
+</div>
+<!-- Slide 20-21: References -->
+<div class="slide">
+<h2>References (Part 1)</h2>
+<div class="references">
+<ol style="list-style: decimal; padding-left: 20px;">
+<li><a href="https://www.google.com/search?q=Park+T,+Lee+IH,+Lee+SW,+Kong+SW.+Artificial+Intelligence+in+Pediatric+Healthcare:+current+applications,+potentials+and+implementation+considerations.+Clin+Exp+Pediatr.+2025+Jun+25.+[Search]" rel="noopener noreferrer" target="_blank">Park T, Lee IH, Lee SW, Kong SW. Artificial Intelligence in Pediatric Healthcare: current applications, potentials and implementation considerations. Clin Exp Pediatr. 2025 Jun 25. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Hong+S,+Yon+DK.+Artificial+intelligence+in+pediatric+healthcare:+bridging+potential,+clinical+practice,+and+ethical+considerations.+Clin+Exp+Pediatr.+2025+Aug+28;68(9):652–655.+[Search]" rel="noopener noreferrer" target="_blank">Hong S, Yon DK. Artificial intelligence in pediatric healthcare: bridging potential, clinical practice, and ethical considerations. Clin Exp Pediatr. 2025 Aug 28;68(9):652–655. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Muralidharan+V,+et+al.+A+scoping+review+of+reporting+gaps+in+FDA-approved+AI+medical+devices.+NPJ+Digit+Med.+2024;7:273.+[Search]" rel="noopener noreferrer" target="_blank">Muralidharan V, et al. A scoping review of reporting gaps in FDA-approved AI medical devices. NPJ Digit Med. 2024;7:273. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Brewster+RCL,+Nagy+M,+Bourgeois+FT.+US+FDA+Approval+of+Pediatric+Artificial+Intelligence+and+Machine+Learning–Enabled+Medical+Devices.+JAMA+Pediatr.+2024+Dec+16;179(2):212–214.+[Search]" rel="noopener noreferrer" target="_blank">Brewster RCL, Nagy M, Bourgeois FT. US FDA Approval of Pediatric Artificial Intelligence and Machine Learning–Enabled Medical Devices. JAMA Pediatr. 2024 Dec 16;179(2):212–214. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Tennant+R,+et+al.+A+scoping+review+on+pediatric+sepsis+prediction+technologies+in+healthcare.+NPJ+Digit+Med.+2024+Dec+4;7(1):353.+[Search]" rel="noopener noreferrer" target="_blank">Tennant R, et al. A scoping review on pediatric sepsis prediction technologies in healthcare. NPJ Digit Med. 2024 Dec 4;7(1):353. [Search]</a><a class="example-link" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840033" rel="noopener noreferrer" target="_blank" title="JAMA Pediatrics - Sepsis prediction models"> [JAMA Pediatrics - Sepsis prediction models]</a></li>
+<li><a href="https://www.google.com/search?q=Children's+Hospital+Association.+Artificial+Intelligence+and+Children's+Health.+Published+Jan+28,+2025.+[Search]" rel="noopener noreferrer" target="_blank">Children's Hospital Association. Artificial Intelligence and Children's Health. Published Jan 28, 2025. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Mount+Sinai+Health+System.+Mount+Sinai+Launches+Center+for+Artificial+Intelligence+in+Children's+Health.+March+24,+2025.+[Search]" rel="noopener noreferrer" target="_blank">Mount Sinai Health System. Mount Sinai Launches Center for Artificial Intelligence in Children's Health. March 24, 2025. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Alpern+ER,+et+al.+Derivation+and+Validation+of+Predictive+Models+for+Early+Pediatric+Sepsis.+JAMA+Pediatrics.+2025.+[Search]" rel="noopener noreferrer" target="_blank">Alpern ER, et al. Derivation and Validation of Predictive Models for Early Pediatric Sepsis. JAMA Pediatrics. 2025. [Search]</a><a class="example-link" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840033" rel="noopener noreferrer" target="_blank" title="JAMA Pediatrics - Sepsis prediction models"> [JAMA Pediatrics - Sepsis prediction models]</a></li>
+<li><a href="https://www.google.com/search?q=Singh+SB,+et+al.+Applications+of+Artificial+Intelligence+for+Pediatric+Cancer+Imaging.+AJR+Am+J+Roentgenol.+2024+Aug;223(2):e2431076.+[Search]" rel="noopener noreferrer" target="_blank">Singh SB, et al. Applications of Artificial Intelligence for Pediatric Cancer Imaging. AJR Am J Roentgenol. 2024 Aug;223(2):e2431076. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Saratsis+A.+Artificial+Intelligence+in+Pediatric+Cancer+Diagnosis+and+Care.+Pediatric+Cancer+Research+Foundation.+April+15,+2024.+[Search]" rel="noopener noreferrer" target="_blank">Saratsis A. Artificial Intelligence in Pediatric Cancer Diagnosis and Care. Pediatric Cancer Research Foundation. April 15, 2024. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Dalboni+da+Rocha+JL,+et+al.+Artificial+Intelligence+for+Neuroimaging+in+Pediatric+Cancer.+Cancers.+2025+Feb+12;17(4):622.+[Search]" rel="noopener noreferrer" target="_blank">Dalboni da Rocha JL, et al. Artificial Intelligence for Neuroimaging in Pediatric Cancer. Cancers. 2025 Feb 12;17(4):622. [Search]</a></li>
+<li><a href="https://www.google.com/search?q=Hassan+M,+Shahzadi+S,+Kloczkowski+A.+Harnessing+Artificial+Intelligence+in+Pediatric+Oncology+Diagnosis+and+Treatment.+Cancers.+2025+May+30;17(11):1828.+[Search]" rel="noopener noreferrer" target="_blank">Hassan M, Shahzadi S, Kloczkowski A. Harnessing Artificial Intelligence in Pediatric Oncology Diagnosis and Treatment. Cancers. 2025 May 30;17(11):1828. [Search]</a></li>
+</ol>
+<a class="example-link" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840033" rel="noopener noreferrer" target="_blank" title="JAMA Pediatrics - Sepsis prediction models"> [JAMA Pediatrics - Sepsis prediction models]</a></div>
+</div>
+<div class="slide">
+<h2>References (Part 2) - With Indian Sources</h2>
+<div class="references">
+<ol start="13" style="list-style: decimal; padding-left: 20px;">
+<li><a href="https://www.whitehouse.gov/presidential-actions/2025/09/unlocking-cures-for-pediatric-cancer-with-artificial-intelligence/" rel="noopener noreferrer" target="_blank">The White House. Unlocking Cures for Pediatric Cancer with Artificial Intelligence. Executive Order, September 2025. [Source] [Source2]</a></li>
+<li><a href="https://www.google.com/search?q=Abdelrahim+M,+et+al.+AI-based+non-invasive+imaging+technologies+for+early+autism+spectrum+disorder+diagnosis.+Artif+Intell+Med.+2025;161:103074+[Source]+[Source2]+[Search]" rel="noopener noreferrer" target="_blank">Abdelrahim M, et al. AI-based non-invasive imaging technologies for early autism spectrum disorder diagnosis. Artif Intell Med. 2025;161:103074 [Source] [Source2] [Search]</a><a class="example-link" href="https://pubmed.ncbi.nlm.nih.gov/28592562/" rel="noopener noreferrer" target="_blank" title="Emerson et al. Sci Transl Med. 2017 (early ASD MRI)"> [Emerson et al. Sci Transl Med. 2017 (early ASD MRI)]</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10940991/" rel="noopener noreferrer" target="_blank">Bhargava H, et al. Promises, Pitfalls, and Clinical Applications of Artificial Intelligence in Pediatrics. J Med Internet Res. 2024;26:e49022. [Source] [Source2]</a></li>
+<li><a href="https://www.google.com/search?q=[INDIA]+IndiaAI.+AI+in+Indian+healthcare:+Emerging+trends+and+opportunities+in+2025.+Ministry+of+Electronics+&amp;+IT,+Government+of+India.+2025.+[Source]+[Source2]+[Search]" rel="noopener noreferrer" target="_blank">[INDIA] IndiaAI. AI in Indian healthcare: Emerging trends and opportunities in 2025. Ministry of Electronics &amp; IT, Government of India. 2025. [Source] [Source2] [Search]</a></li>
+<li><a href="https://www.google.com/search?q=[INDIA]+Indian+Association+of+Preventive+and+Social+Medicine.+AI+Horizons+in+Indian+Healthcare.+Indian+J+Community+Med.+2024.+[Source]+[Source2]+[Search]" rel="noopener noreferrer" target="_blank">[INDIA] Indian Association of Preventive and Social Medicine. AI Horizons in Indian Healthcare. Indian J Community Med. 2024. [Source] [Source2] [Search]</a></li>
+<li><a href="https://nhm.gov.in/index1.php?lang=1&amp;level=2&amp;lid=219&amp;sublinkid=819" rel="noopener noreferrer" target="_blank">[INDIA] National Health Mission. Child Health Statistics and Cause of Death Report 2020-22. Ministry of Health &amp; Family Welfare, Government of India. [Source] [Source2]</a></li>
+<li><a href="https://www.nature.com/articles/jp2016143" rel="noopener noreferrer" target="_blank">[INDIA] Paul VK, et al. State of newborn health in India. J Perinatol. 2016 Dec;36(s3):S3-S8. [Source] [Source2]</a></li>
+<li><a href="https://www.google.com/search?q=Zhou+C,+et+al.+Machine+Learning+in+Pediatric+Healthcare:+Current+Trends,+Challenges,+and+Future+Directions.+Healthcare.+2025+Feb.+[Source]+[Source2]+[Search]" rel="noopener noreferrer" target="_blank">Zhou C, et al. Machine Learning in Pediatric Healthcare: Current Trends, Challenges, and Future Directions. Healthcare. 2025 Feb. [Source] [Source2] [Search]</a></li>
+<li><a href="https://jamanetwork.com/journals/jamapediatrics/fullarticle/2801234" rel="noopener noreferrer" target="_blank">Sisk BA, Antes AL, DuBois JM. An overarching framework for the ethics of artificial intelligence in pediatrics. JAMA Pediatr. 2024;178:213–214. [Source] [Source2]</a></li>
+</ol>
+<a class="example-link" href="https://pubmed.ncbi.nlm.nih.gov/28592562/" rel="noopener noreferrer" target="_blank" title="Emerson et al. Sci Transl Med. 2017 (early ASD MRI)"> [Emerson et al. Sci Transl Med. 2017 (early ASD MRI)]</a></div>
+</div>
+<!-- Slide 22: Thank You - Animated -->
+<div class="slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); overflow: hidden; position: relative;">
+<style>
                 @keyframes comet {
                     0% { 
                         transform: translate(-100px, -100px) rotate(-45deg);
@@ -3434,92 +3295,79 @@
                     font-size: 1.5em;
                 }
             </style>
-            
-            <!-- Comets -->
-            <div class="comet"></div>
-            <div class="comet"></div>
-            <div class="comet"></div>
-            <div class="comet"></div>
-            
-            <!-- Medical Icons Background -->
-            <div class="medical-icons">
-                <div class="medical-icon" style="top: 10%; left: 10%; animation-delay: 0s;">🏥</div>
-                <div class="medical-icon" style="top: 15%; left: 85%; animation-delay: 0.5s;">💉</div>
-                <div class="medical-icon" style="top: 40%; left: 5%; animation-delay: 1s;">🔬</div>
-                <div class="medical-icon" style="top: 45%; left: 90%; animation-delay: 1.5s;">🩺</div>
-                <div class="medical-icon" style="top: 70%; left: 15%; animation-delay: 2s;">💊</div>
-                <div class="medical-icon" style="top: 75%; left: 80%; animation-delay: 2.5s;">🧬</div>
-                <div class="medical-icon" style="top: 30%; left: 50%; animation-delay: 0.7s;">⚕️</div>
-                <div class="medical-icon" style="top: 60%; left: 45%; animation-delay: 1.8s;">🤖</div>
-            </div>
-            
-            <!-- Sparkles -->
-            <div class="sparkle-container">
-                <div class="sparkle" style="top: 20%; left: 30%; animation-delay: 0.2s;"></div>
-                <div class="sparkle" style="top: 40%; left: 60%; animation-delay: 0.8s;"></div>
-                <div class="sparkle" style="top: 60%; left: 25%; animation-delay: 1.3s;"></div>
-                <div class="sparkle" style="top: 80%; left: 70%; animation-delay: 0.5s;"></div>
-                <div class="sparkle" style="top: 25%; left: 75%; animation-delay: 1.1s;"></div>
-                <div class="sparkle" style="top: 55%; left: 15%; animation-delay: 1.6s;"></div>
-                <div class="sparkle" style="top: 35%; left: 85%; animation-delay: 0.4s;"></div>
-                <div class="sparkle" style="top: 70%; left: 50%; animation-delay: 1.9s;"></div>
-            </div>
-            
-            <!-- Main Content -->
-            <div class="thank-you-content">
-                <div class="thank-you-title">Thank You!</div>
-                
-                <div class="thank-you-subtitle">
+<!-- Comets -->
+<div class="comet"></div>
+<div class="comet"></div>
+<div class="comet"></div>
+<div class="comet"></div>
+<!-- Medical Icons Background -->
+<div class="medical-icons">
+<div class="medical-icon" style="top: 10%; left: 10%; animation-delay: 0s;">🏥</div>
+<div class="medical-icon" style="top: 15%; left: 85%; animation-delay: 0.5s;">💉</div>
+<div class="medical-icon" style="top: 40%; left: 5%; animation-delay: 1s;">🔬</div>
+<div class="medical-icon" style="top: 45%; left: 90%; animation-delay: 1.5s;">🩺</div>
+<div class="medical-icon" style="top: 70%; left: 15%; animation-delay: 2s;">💊</div>
+<div class="medical-icon" style="top: 75%; left: 80%; animation-delay: 2.5s;">🧬</div>
+<div class="medical-icon" style="top: 30%; left: 50%; animation-delay: 0.7s;">⚕️</div>
+<div class="medical-icon" style="top: 60%; left: 45%; animation-delay: 1.8s;">🤖</div>
+</div>
+<!-- Sparkles -->
+<div class="sparkle-container">
+<div class="sparkle" style="top: 20%; left: 30%; animation-delay: 0.2s;"></div>
+<div class="sparkle" style="top: 40%; left: 60%; animation-delay: 0.8s;"></div>
+<div class="sparkle" style="top: 60%; left: 25%; animation-delay: 1.3s;"></div>
+<div class="sparkle" style="top: 80%; left: 70%; animation-delay: 0.5s;"></div>
+<div class="sparkle" style="top: 25%; left: 75%; animation-delay: 1.1s;"></div>
+<div class="sparkle" style="top: 55%; left: 15%; animation-delay: 1.6s;"></div>
+<div class="sparkle" style="top: 35%; left: 85%; animation-delay: 0.4s;"></div>
+<div class="sparkle" style="top: 70%; left: 50%; animation-delay: 1.9s;"></div>
+</div>
+<!-- Main Content -->
+<div class="thank-you-content">
+<div class="thank-you-title">Thank You!</div>
+<div class="thank-you-subtitle">
                     For taking this journey into the future of pediatrics
                 </div>
-                
-                <div class="ai-badge">
-                    <span class="rotating-icon" style="display: inline-block; margin-right: 10px;">🤖</span>
+<div class="ai-badge">
+<span class="rotating-icon" style="display: inline-block; margin-right: 10px;">🤖</span>
                     Powered by AI • Driven by Compassion
                     <span class="rotating-icon" style="display: inline-block; margin-left: 10px;">❤️</span>
-                </div>
-                
-                <div style="font-size: 1.3em; margin: 30px 0; line-height: 1.8;">
-                    <p>Together, we're building a healthier, smarter future</p>
-                    <p>where <strong>every child</strong> gets the best possible care</p>
-                    <p>through the perfect blend of</p>
-                    <p><strong>human expertise + AI innovation</strong></p>
-                </div>
-                
-                <div class="contact-info">
-                    <p style="font-size: 1.3em; margin-bottom: 15px;">
-                        <strong>Dr. Luhit Dhungel</strong>
-                    </p>
-                    <p style="font-size: 1.1em; opacity: 0.95;">
-                        MBBS, MD PEDIATRICS
-                    </p>
-                    <p style="margin-top: 25px; font-size: 1.1em;">
+</div>
+<div style="font-size: 1.3em; margin: 30px 0; line-height: 1.8;">
+<p>Together, we're building a healthier, smarter future</p>
+<p>where <strong>every child</strong> gets the best possible care</p>
+<p>through the perfect blend of</p>
+<p>human expertise + AI innovation</p>
+</div>
+<div class="contact-info">
+<p style="font-size: 1.3em; margin-bottom: 15px;">
+<strong>Dr. Luhit Dhungel</strong>
+</p>
+<p style="font-size: 1.1em; opacity: 0.95;">MBBS, MD PEDIATRICS</p>
+<p style="margin-top: 25px; font-size: 1.1em;">
                         Let's continue the conversation about<br/>
                         transforming pediatric healthcare with AI
                     </p>
-                    <p style="margin-top: 20px; font-size: 1.2em;">
+<p style="margin-top: 20px; font-size: 1.2em;">
                         Made with <span class="heart-beat">❤️</span> for the children we serve
                     </p>
-                </div>
-                
-                <div style="margin-top: 40px; font-size: 1em; opacity: 0.8;">
-                    <p>"The best way to predict the future is to create it."</p>
-                    <p style="margin-top: 10px;">— Peter Drucker</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation -->
-        <div class="navigation">
-            <button id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
-            <span class="slide-counter">
-                <span id="currentSlide">1</span> / <span id="totalSlides">22</span>
-            </span>
-            <button id="nextBtn" onclick="changeSlide(1)">Next →</button>
-        </div>
-    </div>
-
-    <script>
+</div>
+<div style="margin-top: 40px; font-size: 1em; opacity: 0.8;">
+<p>"The best way to predict the future is to create it."</p>
+<p style="margin-top: 10px;">— Peter Drucker</p>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<div class="navigation">
+<button id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+<span class="slide-counter">
+<span id="currentSlide">1</span> / <span id="totalSlides">22</span>
+</span>
+<button id="nextBtn" onclick="changeSlide(1)">Next →</button>
+</div>
+</div>
+<script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;

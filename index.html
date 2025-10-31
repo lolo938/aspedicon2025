@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#667eea">
     <title>Smart Pediatrics: AI in Child Healthcare</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: rgba(102, 126, 234, 0.3);
         }
 
         body {
@@ -19,6 +28,8 @@
             margin: 0;
             position: relative;
             overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         /* AI Grid Background */
@@ -1109,6 +1120,451 @@
             margin-bottom: 12px;
             position: relative;
             z-index: 1;
+        }
+
+        /* ============================================
+           RESPONSIVE STYLES FOR MOBILE & TABLET
+           ============================================ */
+
+        /* Tablet Styles (768px - 1024px) */
+        @media screen and (max-width: 1024px) {
+            .slide {
+                padding: 30px 40px;
+            }
+
+            .slide h2 {
+                font-size: 1.8em;
+            }
+
+            .slide h3 {
+                font-size: 1.3em;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+
+            .comparison-table {
+                font-size: 0.95em;
+            }
+
+            .process-flow {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .process-step {
+                margin: 10px;
+            }
+
+            .arrow {
+                display: none;
+            }
+        }
+
+        /* Mobile Styles (below 768px) */
+        @media screen and (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .presentation-container::before,
+            .presentation-container::after {
+                width: 50px;
+                height: 50px;
+            }
+
+            .presentation-container::after {
+                bottom: 70px;
+            }
+
+            .slide {
+                padding: 20px 15px;
+                padding-bottom: 80px;
+            }
+
+            .slide h2 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+
+            .slide h3 {
+                font-size: 1.2em;
+                margin-bottom: 12px;
+            }
+
+            .slide p, .slide li {
+                font-size: 0.95em;
+                line-height: 1.6;
+            }
+
+            /* Title Slide Mobile */
+            .title-slide h1 {
+                font-size: 1.6em;
+                padding: 0 10px;
+            }
+
+            .title-slide .subtitle {
+                font-size: 1em;
+            }
+
+            .title-slide .icon {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            .presenter-info {
+                margin-top: 10px;
+                padding: 10px;
+            }
+
+            .presenter-name {
+                font-size: 1em;
+            }
+
+            .presenter-credentials {
+                font-size: 0.85em;
+            }
+
+            /* Navigation Mobile Optimized */
+            .navigation {
+                padding: 12px 10px;
+                flex-wrap: nowrap;
+                gap: 8px;
+            }
+
+            .navigation button {
+                padding: 12px 16px;
+                font-size: 0.9em;
+                min-width: 90px;
+                flex: 1;
+            }
+
+            .slide-counter {
+                font-size: 0.9em;
+                padding: 0 5px;
+                white-space: nowrap;
+            }
+
+            /* Stats Grid Mobile */
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .stat-number {
+                font-size: 2em;
+            }
+
+            .stat-label {
+                font-size: 0.9em;
+            }
+
+            /* Content Boxes Mobile */
+            .content-box {
+                padding: 15px;
+                margin: 12px 0;
+            }
+
+            .content-box ul {
+                padding-left: 20px;
+            }
+
+            .content-box li {
+                margin-bottom: 10px;
+            }
+
+            /* Tables Mobile - Horizontal Scroll */
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                font-size: 0.85em;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .comparison-table thead {
+                display: table-header-group;
+            }
+
+            .comparison-table tbody {
+                display: table-row-group;
+            }
+
+            .comparison-table tr {
+                display: table-row;
+            }
+
+            .comparison-table td,
+            .comparison-table th {
+                display: table-cell;
+                padding: 10px;
+                min-width: 120px;
+            }
+
+            /* Process Flow Mobile */
+            .process-flow {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .process-step {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px 0;
+            }
+
+            .arrow {
+                display: block;
+                transform: rotate(90deg);
+                margin: 10px 0;
+            }
+
+            /* Case Study Mobile */
+            .case-study {
+                padding: 15px;
+                margin: 12px 0;
+            }
+
+            .case-study h3 {
+                font-size: 1.1em;
+            }
+
+            .case-study p {
+                font-size: 0.9em;
+                margin-bottom: 10px;
+            }
+
+            /* Highlight Box Mobile */
+            .highlight {
+                padding: 15px;
+                margin: 12px 0;
+            }
+
+            /* Key Point Mobile */
+            .key-point {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+
+            /* Example Box Mobile */
+            .example-box {
+                padding: 15px;
+                margin: 12px 0;
+            }
+
+            /* Country Badges Mobile */
+            .country-badge {
+                font-size: 0.7em;
+                padding: 3px 8px;
+            }
+
+            /* Progress Bar Mobile */
+            .progress-bar {
+                height: 20px;
+            }
+
+            /* Step Number Mobile */
+            .step-number {
+                font-size: 1.5em;
+                width: 40px;
+                height: 40px;
+            }
+
+            .step-title {
+                font-size: 1em;
+            }
+
+            .step-desc {
+                font-size: 0.85em;
+            }
+
+            /* Simple Step Mobile */
+            .simple-step {
+                padding: 15px;
+                margin: 10px 0;
+            }
+
+            .simple-step h4 {
+                font-size: 1.1em;
+            }
+
+            .simple-step p {
+                font-size: 0.9em;
+            }
+
+            .simple-step::after {
+                font-size: 1.8em;
+                top: 10px;
+                right: 10px;
+            }
+
+            /* Thank You Slide Mobile */
+            .thank-you-content {
+                padding: 20px;
+            }
+
+            .thank-you-title {
+                font-size: 2.5em;
+            }
+
+            .thank-you-subtitle {
+                font-size: 1.2em;
+            }
+
+            .ai-badge {
+                font-size: 0.95em;
+                padding: 10px 20px;
+            }
+
+            .contact-info {
+                font-size: 0.9em;
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+            /* Hide decorative elements on very small screens */
+            .comet,
+            .medical-icon,
+            .sparkle {
+                display: none;
+            }
+
+            /* Adjust animations for better mobile performance */
+            .animated {
+                animation-duration: 0.5s;
+            }
+
+            /* Touch-friendly hover effects */
+            .stat-card:active,
+            .content-box:active,
+            .simple-step:active {
+                transform: scale(0.98);
+            }
+        }
+
+        /* Extra Small Mobile (below 480px) */
+        @media screen and (max-width: 480px) {
+            .slide {
+                padding: 15px 10px;
+                padding-bottom: 80px;
+            }
+
+            .slide h2 {
+                font-size: 1.3em;
+            }
+
+            .slide h3 {
+                font-size: 1.1em;
+            }
+
+            .slide p, .slide li {
+                font-size: 0.9em;
+            }
+
+            .title-slide h1 {
+                font-size: 1.4em;
+            }
+
+            .navigation button {
+                padding: 10px 12px;
+                font-size: 0.85em;
+                min-width: 80px;
+            }
+
+            .slide-counter {
+                font-size: 0.85em;
+            }
+
+            .stat-number {
+                font-size: 1.8em;
+            }
+
+            .stat-label {
+                font-size: 0.85em;
+            }
+
+            .thank-you-title {
+                font-size: 2em;
+            }
+
+            .thank-you-subtitle {
+                font-size: 1em;
+            }
+
+            .comparison-table {
+                font-size: 0.75em;
+            }
+
+            .comparison-table td,
+            .comparison-table th {
+                padding: 8px;
+                min-width: 100px;
+            }
+
+            /* Make corner accents smaller */
+            .presentation-container::before,
+            .presentation-container::after {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Landscape Mobile Optimization */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            .slide {
+                padding: 15px 20px;
+                padding-bottom: 70px;
+            }
+
+            .slide h2 {
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+
+            .navigation {
+                padding: 8px 10px;
+            }
+
+            .navigation button {
+                padding: 8px 12px;
+                font-size: 0.85em;
+            }
+
+            .stat-card {
+                padding: 12px;
+            }
+
+            .content-box {
+                padding: 12px;
+                margin: 10px 0;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .navigation {
+                display: none;
+            }
+
+            .slide {
+                display: block !important;
+                page-break-after: always;
+                padding: 20px;
+            }
+
+            .slide::before {
+                display: none;
+            }
+
+            body::before {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -2456,6 +2912,74 @@
             if (event.key === 'ArrowLeft' && currentSlide > 0) changeSlide(-1);
             if (event.key === 'ArrowRight' && currentSlide < totalSlides - 1) changeSlide(1);
         });
+        
+        // Touch/Swipe Support for Mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let touchStartY = 0;
+        let touchEndY = 0;
+        
+        const presentationContainer = document.querySelector('.presentation-container');
+        
+        presentationContainer.addEventListener('touchstart', function(event) {
+            touchStartX = event.changedTouches[0].screenX;
+            touchStartY = event.changedTouches[0].screenY;
+        }, { passive: true });
+        
+        presentationContainer.addEventListener('touchend', function(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            touchEndY = event.changedTouches[0].screenY;
+            handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum distance for a swipe
+            const horizontalSwipe = Math.abs(touchEndX - touchStartX);
+            const verticalSwipe = Math.abs(touchEndY - touchStartY);
+            
+            // Only recognize horizontal swipes (not vertical scrolling)
+            if (horizontalSwipe > verticalSwipe && horizontalSwipe > swipeThreshold) {
+                if (touchEndX < touchStartX && currentSlide < totalSlides - 1) {
+                    // Swipe left - next slide
+                    changeSlide(1);
+                }
+                
+                if (touchEndX > touchStartX && currentSlide > 0) {
+                    // Swipe right - previous slide
+                    changeSlide(-1);
+                }
+            }
+        }
+        
+        // Prevent double-tap zoom on buttons for better mobile UX
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                this.click();
+            });
+        });
+        
+        // Handle orientation change
+        window.addEventListener('orientationchange', function() {
+            setTimeout(() => {
+                // Refresh the current slide display
+                const currentSlideElement = slides[currentSlide];
+                currentSlideElement.style.display = 'none';
+                setTimeout(() => {
+                    currentSlideElement.style.display = 'block';
+                }, 10);
+            }, 100);
+        });
+        
+        // Prevent zoom on double-tap for the presentation container
+        let lastTouchEnd = 0;
+        presentationContainer.addEventListener('touchend', function(event) {
+            const now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
         
         // Initialize
         document.getElementById('prevBtn').disabled = true;
